@@ -1,0 +1,8 @@
+Teddy;40.0
+Fabrice;25.0
+Albane;15.0
+alain;50.0
+Teddy;20.0
+Albane;22.0
+Sarah;10.0
+Marc;12.0

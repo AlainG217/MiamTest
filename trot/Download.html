@@ -1,0 +1,1491 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="fr" xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <script src="https://www.zone-turf.fr/app/tc_NextInteractive_26.js?528"></script>
+
+    <script src="//cdn.hubvisor.io/wrapper/01BYK28ENND8X5G8K0AJ2DPK4E/hubvisor.js"></script>
+
+        <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W3JJ6BK');</script>
+    <!-- End Google Tag Manager -->
+
+
+            <meta name="apple-itunes-app" content="app-id=863906994"/>
+                <meta name="google-play-app" content="app-id=fr.zoneturf.mobility"/>
+        <link rel="apple-touch-icon"
+          href="https://a3.mzstatic.com/us/r30/Purple/v4/34/a1/ca/34a1ca27-1c8a-1941-a2f4-502f34183c4f/mzl.eckljqhh.175x175-75.jpg">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"de331bc4d6",applicationID:"23024354"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Script-Type" content="text/javascript"/>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta http-equiv="Content-Language" content="fr-FR"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">-->
+    <!--<meta name="viewport" id="viewport" content="" />-->
+    <meta name="google-site-verification" content="hpO9AaNJKxf2LxB0u2WPAFk2B4857x3Z2WDkdy-Okd8"/>
+    <title>Prix de Pavilly (R1C1) : Arrivée et rapports PMU - 01/01/2018 | Zone-Turf.fr</title>
+    <meta name="description" content="Arrivées et rapports PMU du Prix de Pavilly (R1C1) : classement, écart, rapports simple, couplé, trio, classic tiercé…"/>
+    <meta name="keywords" content="Quinté, PMU, Turf"/>
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:10" />
+
+                <link rel="canonical" href="https://www.zone-turf.fr/rapports/r1-c1-prix-de-pavilly-488534.html"/>
+            <meta name="robots" content="index, follow" />        
+    <meta name="msvalidate.01" content="8C881B67639D60914783EEFCBF0AF5F0" />
+    <meta property="og:title" content=""/>
+    <meta property="og:site_name" content="ZoneTurf.fr"/>
+    <meta property="og:image" content="https://www.zone-turf.fr/media/images/logo2.png"/>
+    <meta property="og:image:alt" content="" />
+
+    <link rel="image_src" href="https://www.zone-turf.fr/media/images/logo.png"
+    / >
+    <link rel="shortcut icon" href="https://www.zone-turf.fr/favicon.ico?2" type="image/x-icon"/>
+    <link rel="icon" href="https://www.zone-turf.fr/favicon.ico?2" type="image/x-icon"/>
+    <link rel="alternate" type="application/rss+xml" title="Actualité des courses hippiques - Zone-turf.fr"
+          href="https://www.zone-turf.frrss/"/>
+
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/reset.css?528"/>
+
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/validationEngine.jquery.css?528"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/thickbox.jquery.css?528"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/main.css?528"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/jquery/jquery-ui-1.7.2.custom.css"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/datatable.jquery.css?528"/>
+    <link rel="stylesheet" type="text/css" media="screen, projection, print"
+          href="https://www.zone-turf.fr/design/jquery/jquery.tooltipster.css?528"/>
+    <link rel="stylesheet" type="text/css" media="print"
+          href="https://www.zone-turf.fr/design/print.css?528"/>
+
+            <link rel="stylesheet"
+              href="https://www.zone-turf.fr/design/jquery/jquery.smartbanner.css?528"
+              type="text/css"/>
+    
+    <link media="only screen and (max-device-width: 768px)"
+          href="https://www.zone-turf.fr/design/iphone.css?528" type="text/css"
+          rel="stylesheet"/>
+
+
+        <script type="text/javascript">
+        var mnw_responsive = 'mobile_rapports_detail';
+    </script>
+
+    <!-- Thanks to google closure, we compress all this -->
+    <!--script type="application/javascript" src="http://static.bfmtv.com/ressources/js/external/jquery.min.js"></script-->
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery-1.7.1.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.validationEngine.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.thickbox.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.form.js?528"></script>
+    <script type="text/javascript" src="https://www.zone-turf.fr/app/jquery/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="https://www.zone-turf.fr/app/jquery/jquery.mybgiframe.js"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.dataTables.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.validationEngine-fr.js?528"></script>
+    <script type="text/javascript" src="https://www.zone-turf.fr/app/jquery/jquery.scrollabletab.js"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.stylish-select-0.4.5.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.cookie.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.browser.mobile.js?528"></script>
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.tooltipster.min.js?528"></script>
+    <!--script type="text/javascript" src="https://www.zone-turf.fr/app/jquery/google-closure.js?v6"></script-->
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.zoneturf.js?528"></script>
+    <script type="text/javascript" src="https://www.zone-turf.fr/app/main.js?528"></script>
+
+    <!-- Js pub Smart -->
+    <script src='https://securite.01net.com/config.js?nwid=13' type="text/javascript"></script>
+    <script type="text/javascript" async>
+        var sas_pageid = '82179/592474';
+        sas.setup({networkid: 13, domain: 'https://securite.01net.com', async: true, insequence: true, renderMode: 2});
+        sas.call("onecall", {
+            siteId: 82179,
+            pageId:592474,
+            formats:[{id: 95},{id: 98},{id:289},{id:379},{id:35582},{id:35864}],
+            target: 'rapports;'
+        });
+        sas.render();
+    </script>
+
+<!--    <script type="text/javascript" src="//tagmanager.smartadserver.com/13/82179/smart.prebid.js" async></script>-->
+    <!-- Fin Js pub Smart -->
+    <!-- Google Adsense -->
+    <script data-ad-client="ca-pub-5603862283412750" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- Fin Google Adsense -->
+
+    <!-- Js pub google doubleclick Janvier 2014 -->
+    <script type='text/javascript'>
+
+        (function () {
+            var useSSL = 'https:' == document.location.protocol;
+            var src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+        })();
+    </script>
+    <script type='text/javascript'>
+        googletag.defineSlot('/25563834/interstitiel_mobile', [320, 480], 'div-gpt-ad-1396538098297-0').addService(googletag.pubads());
+
+                googletag.pubads().enableSyncRendering();
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+    </script>
+    <!-- Js pub footer -->
+
+    
+    <!--[if IE]>
+    <link href="https://www.zone-turf.fr/design/ie7.css?528" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link href="https://www.zone-turf.fr/design/ie6.css?528" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+        <script type="text/javascript">
+        <!--//<![CDATA[
+        doRefresh(120, '');
+
+        var widgetIdCaptcha;
+    var onloadCallback = function() {
+    // Renders the HTML element with id "example1" as a reCAPTCHA widget.
+    // The id of the reCAPTCHA widget is assigned to "widgetId1".
+    widgetIdCaptcha = grecaptcha.render("captchaZone", {
+		"sitekey" : "6Ld3NgwUAAAAAPhvdam-_sVpjkfxxS0cyItjuviM",
+		"theme" : "light"
+	});
+	};$(document).ready(function() {
+								$('#engages').dataTable( {
+									'bFilter': false,
+									'bLengthChange': false,
+									'bPaginate': false,
+									'bInfo': false,
+									'aoColumns': [
+										{ bSortable: true, sType: 'number' },
+										{ bSortable: false },
+										{ bSortable: false },
+										{ bSortable: true, sType: 'SA' },{ bSortable: true },
+										{ bSortable: false },
+										{ bSortable: false },
+										{ bSortable: true, sType: 'currency' },{ bSortable: true, sType: 'record' },{ bSortable: false },
+										{ bSortable: false },
+										{ bSortable: true, sType: 'cote' },
+										{ bSortable: true, sType: 'cote' },
+										{ bSortable: false }
+									]
+								  });
+								});$(document).ready(function() {
+								$('#rapports').doMenuScroll();
+						   });        $('head').initResponsiveCss("want_classic_mobile_version", mnw_responsive, "528", "https://www.zone-turf.fr/");
+
+
+        //]]>-->
+    </script>
+</head>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3JJ6BK"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+<div id="habillage">
+    <div id="overall">
+        
+        <div id="website">
+            <div id="header-text-link" class="hidden-smallDevice">
+                                            </div>
+            <div id="outline">
+                <div id="header" style="position:relative">
+                    <div id="login" class="hidden-smallDevice">
+                        <div id="connect-space"></div>
+                    </div>
+
+                    <a class="open-navbar visible-smallDevice" href="#topnav">
+                        <span class="icon"></span><span class="icon"></span><span class="icon"></span>
+                    </a>
+                    <a href="/" class="logo"><img
+                                src="https://www.zone-turf.fr/media/images/logo.gif"/></a>
+                    <a href="/performances/" class="link-search"></a>
+
+                </div>
+                <div id="menu" class="clearfix hidden-smallDevice">
+                    <ul id="topnav">
+                        <li><a href="/">Accueil</a></li>
+                        <li>
+                            <a class="nav"
+                               href="/programmes/">Programmes</a>
+                            <ul class="column">
+                                <li><a href="/programmes/hier/">Hier</a></li>
+                                <li><a href="/programmes/">Aujourd'hui</a></li>
+                                <li><a href="/programmes/demain/">Demain</a></li>
+                                <li><a href="/calendrier-courses-hippiques/">Autres dates</a>
+                                </li>
+                                <li><a href="/video-quinte-courses-pmu-en-direct/">Vidéo en
+                                        direct</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a class="nav"
+                               href="/pronostics/">Pronostics</a>
+                            <ul class="column">
+                                <li><a href="/pronostics/">Aujourd'hui</a></li>
+                                <li><a href="/pronostics/demain/">Demain</a></li>
+                                <li><a href="/pronostics/top-chances/">Top Chances</a></li>
+                                <li><a href="/pronostics/quinte/">Quinté +</a></li>
+                                <li><a href="/pronostics/pick5/">Pick 5</a></li>
+                                <li><a href="/audiotel/">Audiotel</a></li>
+                                <li><a href="/videos-pronos/">Vidéos pronos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav"
+                               href="/performances/">Performances</a>
+                            <ul class="column">
+                                <li><a href="/performances/cheval/">Cheval</a></li>
+                                <li><a href="/performances/jockey/">Jockey</a></li>
+                                <li><a href="/performances/entraineur/">Entraineur</a></li>
+                                <li><a href="/performances/proprietaire/">Propriétaire</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="rapports">
+                            <a class="nav active"
+                               href="/rapports/"><span
+                                        class="hidden-smallDevice">Arrivées-</span>Rapports</a>
+                            <ul class="column">
+                                <li><a href="/rapports/hier/">Hier</a></li>
+                                <li><a href="/rapports/">Aujourd'hui</a></li>
+                                <li><a href="/rapports/quinte/">Quinté +</a></li>
+                                <li><a href="/rapports/pick5/">Pick 5</a></li>
+                                <li><a href="/calendrier-courses-hippiques/">Autres dates</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav"
+                               href="/quinte/">Quinté</a>
+                            <ul class="column">
+                                <li><a href="/pronostics/quinte/">Pronostics</a></li>
+                                <li><a href="/quinte/partants/">Partants</a></li>
+                                <li><a href="/quinte/rapport/">Arrivées et rapports</a></li>
+                                <li><a href="/video-quinte-courses-pmu-en-direct/">Vidéo en
+                                        direct</a></li>
+                                <!--li><a href="/jeux/quinte/">Jeux</a></li-->
+                            </ul>
+                        </li>
+                        <li class="visible-smallDevice">
+                            <a href="/quinte/rapport/">Quinté rapports</a>
+                        </li>
+                        <li class="visible-smallDevice">
+                            <a href="/pick5/">Pick 5</a>
+                        </li>
+                        <li class="visible-smallDevice">
+                            <a href="/pick5/rapport/">Pick 5 rapports</a>
+                        </li>
+                        <li class="hidden-smallDevice">
+                            <a class="nav"
+                               href="/actualite/">Actu</a>
+                            <ul class="column">
+                                <li><a href="/actualite/plat/">Plat</a></li>
+                                <li><a href="/actualite/obstacle/">Obstacle</a></li>
+                                <li><a href="/actualite/trot/">Trot</a></li>
+                                <li><a href="/prix-d-amerique/">Prix d'Amerique</a></li>
+                                <li><a href="/prix-de-l-arc-de-triomphe/">Prix de l'Arc de
+                                        Triomphe</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-smallDevice">
+                            <!--a class="nav" href="/forum/">FORUM</a>
+								<ul class="column">
+									<li><a href="/forum/">Tous</a></li>
+									<li><a href="/forum/quinte/">Quinté +</a></li>
+									<li><a href="/forum/pronostics/">Pronostics</a></li>
+									<li><a href="/forum/plat/">Plat</a></li>
+									<li><a href="/forum/obstacle/">Obstacle</a></li>
+									<li><a href="/forum/trot/">Trot</a></li>
+									<li><a href="/forum/cafe/">Café</a></li>
+								</ul-->
+
+                            <a class="nav"
+                               href="/communaute/">Communauté</a>
+                            <ul class="column">
+                                <li><a href="/forum/">Forums</a></li>
+                                <li><a href="/impressions-publiques/">Impressions chevaux</a>
+                                </li>
+                                <li><a href="/membres/recherche.html">Membres</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-smallDevice">
+                            <a class="nav"
+                               href="/membres/index.html">Espace perso</a>
+
+                            <ul class="column">
+                                <li><a href="/membres/mes-coordonnees/">Recevoir les
+                                        pronostics</a></li>
+                                <li><a href="/membres/mes-alertes-partants/">Mes alertes
+                                        partants</a></li>
+                                <li><a href="/membres/mes-alertes-rapports/">Mes alertes
+                                        rapports</a></li>
+                                <li><a href="/membres/mes-impressions/">Mes impressions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="parier hidden-smallDevice">
+                            <a class="nav"
+                               href="/parier-courses-hippiques/ ">Parier</a>
+                        </li>
+                        <li class="last hidden-smallDevice">
+                            <a class="nav"
+                               href="/a-propos-des-courses/">À propos des courses tout</a>
+                            <ul class="column">
+                                <li><a href="/jeux-concours/qatar-arc-trials/">Jeu concours</a></li>
+                                <li><a href="/video-quinte-courses-pmu-en-direct/">Vidéo en
+                                        direct</a></li>
+                                <li><a href="/parier-courses-hippiques/">Parier sur les
+                                        courses</a></li>
+                                <li><a href="/comparateur-bookmakers/">Comparateur
+                                        bookmakers</a></li>
+                                <li><a href="/pick5/">Pick 5</a></li>
+                                <li><a href="/definition/">Lexique</a></li>
+                                <li><a href="/guide-turf/">Guide</a></li>
+
+                                <li><a href="/prix-d-amerique/">Prix d'Amerique</a></li>
+                                <li><a href="/prix-de-diane/">Prix de Diane</a></li>
+                                <li><a href="/prix-de-l-arc-de-triomphe/">Prix de l'Arc de
+                                        Triomphe</a></li>
+                                <li><a href="/prix-du-jockey-club/">Prix du Jockey Club</a>
+                                </li>
+
+                                <li><a href="/calendrier-courses-hippiques/">Calendrier
+                                        courses hippiques</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id='megaban' class='publicite'>
+                    <div id='pub-megaban-inner'>
+                        <script type='text/javascript' async>
+                            try{
+                                if (typeof sas !== 'undefined'){
+                                    sas.cmd.push(function() {
+                                        sas.render('95');
+                                    });
+                                }
+                            }catch(e){
+                                throw e;
+                            }
+                        </script>
+                    </div>
+                </div>                <div class="megabookmaker megabottom"><div class="inner"><table width="100%"><tr><td class="picture"><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_BANDEAUBOOKMARKER&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-pmu.png?4"/></a></td>
+									<td><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_BANDEAUBOOKMARKER&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><span>Pariez sur PMU.fr : <strong>100€</strong> de bonus offerts</span></a></td><td class="picture"><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-zeturf.svg?4"/></a></td>
+									<td><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><span>Pariez sur ZeTurf : <strong>250€</strong> de bonus offerts</span></a></td><td class="picture"><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-genybet.jpg?4"/></a></td>
+									<td><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><span>Pariez sur Genybet.fr : <strong>250€</strong> de bonus offerts</span></a></td></tr></table></div></div>    <div id="center" class="clearfix home">
+        <div id="main-all">
+            <div class="inner  data" id="rapports"><!-- 0-->
+                <a name="top"></a>
+    <div class="inner-bloc clearfix with-pub liste-rapports" id="combinaisons">
+
+        	<div class="bloc data programme fl">
+							<div class="title title-border"><ul class="navigation calendar"><li><span>R1<span class="hidden-smallDevice"> Vincennes</span></span></li><li><a href="/rapports/lundi-1-janvier-2018/">AUTRES REUNIONS</a></li></ul><h1 class="hidden-smallDevice">Rapports PMU du 01/01/2018</h1></div>
+							<div class="inner slider data">
+								<div style="background-color:#FFFFFF;">
+									<button class="prev">&lt;</button><button class="next">&gt;</button><div><ul class="onglet"><li class="pmu active"><a href="/rapports/r1-c1-prix-de-pavilly-488534.html"><span class="date">R1C1</span><span class="reunion hidden-smallDevice">Prix de Pavilly</span><span class="visible-smallDevice">C1</span></a></li><li class="pmu"><a href="/rapports/r1-c2-prix-de-charleville-488536.html"><span class="date">R1C2</span><span class="reunion hidden-smallDevice">Prix de Charleville</span><span class="visible-smallDevice">C2</span></a></li><li class="pmu"><a href="/rapports/r1-c3-prix-d-angouleme-488538.html"><span class="date">R1C3</span><span class="reunion hidden-smallDevice">Prix d'Angouleme</span><span class="visible-smallDevice">C3</span></a></li><li class="pmu"><a href="/rapports/r1-c4-prix-de-clamecy-488540.html"><span class="date">R1C4</span><span class="reunion hidden-smallDevice">Prix de Clamecy</span><span class="visible-smallDevice">C4</span></a></li><li class="pmu"><a href="/rapports/r1-c5-prix-du-croise-laroche-488542.html"><span class="date">R1C5</span><span class="reunion hidden-smallDevice">Prix du Croise-Laroche</span><span class="visible-smallDevice">C5</span></a></li><li class="pmu"><a href="/rapports/r1-c6-prix-de-bouvron-488544.html"><span class="date">R1C6</span><span class="reunion hidden-smallDevice">Prix de Bouvron</span><span class="visible-smallDevice">C6</span></a></li><li class="pmu"><a href="/rapports/r1-c7-prix-de-tournon-488546.html"><span class="date">R1C7</span><span class="reunion hidden-smallDevice">Prix de Tournon</span><span class="visible-smallDevice">C7</span></a></li><li class="pmu"><a href="/rapports/r1-c8-prix-de-sete-488548.html"><span class="date">R1C8</span><span class="reunion hidden-smallDevice">Prix de Sete</span><span class="visible-smallDevice">C8</span></a></li><li class="pmu"><a href="/rapports/r1-c9-prix-de-saint-denis-488550.html"><span class="date">R1C9</span><span class="reunion hidden-smallDevice">Prix de Saint-Denis</span><span class="visible-smallDevice">C9</span></a></li></ul></div>
+
+									<div class="titleGener visible-smallDevice"><p class="presentation">R1 - Vincennes - 13:05</p><div class="nomCourse">C1 - Prix de Pavilly</div><p class="descCourse">60&nbsp;000&euro; - Monté - Mâles et hongres - 4  ans - 2175 m - Grande piste - Corde à gauche</p><br /><h4 class="hidden-smallDevice"><strong>Arrivée  officielle  : </strong> 5 - 4 - 6 - 3 - 1</h4><p class="tc visible-smallDevice"><strong>Arrivée  officielle  : 5 - 4 - 6 - 3 - 1</strong></p></div>
+									<div class="tableau">
+														<div class="rapport clearfix">
+															<div class="tc"><a href="/rapports/r1-c1-prix-de-pavilly-488534.html" class="strong no-underline">Rapports PMU</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/rapports/pmufr/r1-c1-prix-de-pavilly-488534.html" class="underline">Rapport PMU.fr</a></div>
+														<table class="tableau1">
+															<tbody><tr><th class="hidden-smallDevice"></th><th class="tc"><span class="visible-smallDevice"><img src="https://www.zone-turf.fr/media/images/simple-gagnant.svg" class="icon-img"/></span><span class="hidden-smallDevice">Combinaison</span></th><th class="tc">Type</th><th class="tc">Pour 1 €</th><th class="tc">Pour 1,50 &euro;</th></tr><tr><td class="combi-logo hidden-smallDevice" rowspan='3'><img src="/media/images/simple-gagnant.svg" /><strong class="win-ecurie"></strong></td><td class="tc"><strong>5</strong></td><td class="tc"><strong>gagnant</strong></td><td class="tc"><strong>2,80 &euro;</strong></td><td class="tc"><strong>4,20 &euro;</strong></td></tr>
+								 <tr class="alt"><td class="tc"><strong>5</strong></td><td class="tc"><strong>placé</strong></td><td class="tc"><strong>1,30 &euro;</strong></td><td class="tc"><strong>1,95 &euro;</strong></td></tr><tr><td class="tc"><strong>4</strong></td><td class="tc">placé</td><td class="tc">1,30 &euro;</td><td class="tc">1,95 &euro;</td></tr><tr><th class="hidden-smallDevice"></th><th class="tc"><span class="visible-smallDevice"><img src="https://www.zone-turf.fr/media/images/couple-ordre.svg" class="icon-img"/></span><span class="hidden-smallDevice">Combinaison</span></th><th class="tc">Type</th><th class="tc">Pour 1 €</th><th class="tc">Pour 1,50 &euro;</th></tr><tr><td class="combi-logo hidden-smallDevice" rowspan='1'><img src="/media/images/couple-ordre.svg" /></td><td class="tc"><strong>5-4</strong></td><td class="tc">Couplé ordre</td><td class="tc">6 &euro;</td><td class="tc">9 &euro;</td></tr><tr><th class="hidden-smallDevice"></th><th class="tc"><span class="visible-smallDevice"><img src="https://www.zone-turf.fr/media/images/trio-ordre.svg" class="icon-img"/></span><span class="hidden-smallDevice">Combinaison</span></th><th class="tc">Type</th><th class="tc">Pour 1 €</th><th class="tc">Pour 1,50 &euro;</th></tr><tr><td class="combi-logo hidden-smallDevice" rowspan='1'><img src="/media/images/trio-ordre.svg" /></td><td class="tc"><strong>5-4-6</strong></td><td class="tc">Trio ordre</td><td class="tc">30 &euro;</td><td class="tc">45 &euro;</td></tr>			</tbody>
+								</table>
+							</div>
+						</div><div style="margin-bottom:10px;" class="hidden-smallDevice"><span class="ZtLink"><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_BOUTON_DESKTOP_PICK5&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_BOUTON&ead-creativetype=10x10&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" style="color:#443931" target="_blank">Pariez sur Internet avec PMU.fr : 100€ offerts</a></span>				</div>
+								</div>
+							</div>
+
+                             <div class="bloc">   
+                            <!-- OUTBRAIN -->
+                                <div class="OUTBRAIN" data-src="https://www.zone-turf.fr/rapports/r1-c1-prix-de-pavilly-488534.html" data-widget-id="AR_9" data-ob-template="ZoneTurf" ></div>
+                                <script type="text/javascript" async="async" src="//widgets.outbrain.com/outbrain.js"></script>
+                            <!-- OUTBRAIN -->
+                            </div>
+						</div>
+						<br />
+						
+						
+						
+						
+        <div class="bloc-fr">
+		<span class="hidden-smallDevice">
+
+		<div class="bloc search data clear">
+    <div class="inner">
+        <form method="post" action="/">
+            <input type="text" class="textbox fl" name="search" value="" title="Rechercher..."/>
+
+            <div class="select fl">
+                <select name="type-fiche" class="type-fiche" id="type-fiche">
+                    <option value="cheval">Cheval</option>
+                    <option value="jockey">Jockey / Driver</option>
+                    <option value="entraineur">Entraineur</option>
+                    <option value="proprietaire">Propriétaire</option>
+                </select>
+            </div>
+            <input type="submit" class="fr button" value="OK"/>
+            <div class="clear"></div>
+        </form>
+    </div>
+</div>
+<br/><div class='pub2 publicite clear'>
+                    <div class='publicite' style='position: relative; top: 0px; left: 0px;'>
+                        <div style='width:300px; height:auto;'>
+                            <script type='text/javascript' async>
+                                try{
+                                    if (typeof sas !== 'undefined'){
+                                        sas.cmd.push(function() {
+                                            sas.render('35582');
+                                        });
+                                    }
+                                }catch(e){
+                                    throw e;
+                                }
+                            </script>
+                        </div>
+                    </div>
+               </div><div class='pub2 publicite clear'>
+                    <div class='publicite' style='position: relative; top: 0px; left: 0px;'>
+                        <div style='width:300px; height:auto;'>
+                            <script type='text/javascript' async>
+                                try{
+                                    if (typeof sas !== 'undefined'){
+                                        sas.cmd.push(function() {
+                                            sas.render('35864');
+                                        });
+                                    }
+                                }catch(e){
+                                    throw e;
+                                }
+                            </script>
+                        </div>
+                    </div>
+               </div><div class='pub clear publicite onf-ad'><center id="sas_98" data-smart-target="sas_98" data-smart-refresh=""><script type='text/javascript' async>
+                    try{
+						if (typeof sas !== 'undefined'){
+							sas.cmd.push(function() {
+								sas.render('98');
+							});
+						}
+					}catch(e){
+						throw e;
+					}
+				</script></center></div><div class="bloc news bookmakerSide clear"><div class="title"><a href="/parier-courses-hippiques/"><strong>Choisir son opérateur hippique</strong></a></div><div class="inner clearfix"><table><tr class="bookmakerinfos"><td class="first"><strong>1.</strong></td>
+								<td><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_CHOISIROPERATEURHIPPIQUE&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><img src="https://www.zone-turf.fr/media/images/bookmaker-pmu.png?4"/></a></td>
+								<td class="content"><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_CHOISIROPERATEURHIPPIQUE&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><span>Bonus PMU <strong>100€</strong></span></a></td>
+								<td class="content">>&nbsp;&nbsp;<a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_CHOISIROPERATEURHIPPIQUE&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" style="text-decoration:underline;" target="_blank"><strong>Découvrir</strong></a></td>
+							</tr><tr><td></td></tr><tr class="bookmakerinfos"><td class="first"><strong>2.</strong></td>
+								<td><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><img src="https://www.zone-turf.fr/media/images/bookmaker-zeturf.svg?4"/></a></td>
+								<td class="content"><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><span>Bonus 100% Turf <strong>250€</strong></span></a></td>
+								<td class="content">>&nbsp;&nbsp;<a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" style="text-decoration:underline;" target="_blank"><strong>Découvrir</strong></a></td>
+							</tr><tr><td></td></tr><tr class="bookmakerinfos"><td class="first"><strong>3.</strong></td>
+								<td><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><img src="https://www.zone-turf.fr/media/images/bookmaker-genybet.jpg?4"/></a></td>
+								<td class="content"><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><span>Bonus Genybet <strong>250€</strong></span></a></td>
+								<td class="content">>&nbsp;&nbsp;<a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" style="text-decoration:underline;" target="_blank"><strong>Découvrir</strong></a></td>
+							</tr><tr><td></td></tr></table></div></div>        		</span>
+        </div>
+
+        <div style="width:645px;float:left;" class="hidden-smallDevice">
+        </div>
+    </div>
+    <!-- Pepsia Player zone-turf.fr -->
+    <div id="pepsia_player" class="pepsia_player" data-token="00Tj" data-popup="bottom-left" data-logo="0"></div>
+      <script type="text/javascript">(function()
+
+      {var e=document.createElement("script"),f=document.getElementsByTagName("script")[0];e.src="//player.pepsia.com/sdk.js?d="+(new Date).getTime().toString(16);e.type="text/javascript";e.async=!0;f.parentNode.insertBefore(e,f);}
+      )();</script>
+    <style>
+        @media screen and (min-width: 568px){
+            #pepsia_player {
+                width: 645px!important;
+            }
+        }
+    </style>
+<div class="bloc data inner-bloc programme">
+						<div class="title title-border hidden-smallDevice"><h2>Arrivée PMU complète du 01/01/2018</h2></div>
+						<div class="inner slider">
+							<div class="tableau">
+								<div class="rapport partants clearfix">
+									<div>
+										 <div class="inner-bloc presentation">
+									<span class="hidden-smallDevice"><div class="combinaison"><img alt="Simple placé" src="https://www.zone-turf.fr/media/images/small-simple-place.svg"><img alt="Couplé placé" src="https://www.zone-turf.fr/media/images/small-couple-place.svg"><img alt="Couplé ordre" src="https://www.zone-turf.fr/media/images/small-couple-ordre.svg"><img alt="Trio" src="https://www.zone-turf.fr/media/images/small-trio.svg"><img alt="Trio Ordre" src="https://www.zone-turf.fr/media/images/small-trio-ordre.svg"></div></span>
+									<h3 class="hidden-smallDevice"><strong>R1 Course N°1 : </strong> Prix de Pavilly</h3>
+									<h4 class="hidden-smallDevice"><strong>Arrivée  officielle  : </strong> 5 - 4 - 6 - 3 - 1</h4><p class="tc visible-smallDevice"><strong>Arrivée  officielle  : 5 - 4 - 6 - 3 - 1</strong></p>
+									<p class="fl hidden-smallDevice">60&nbsp;000&euro; - Monté - Mâles et hongres - 4  ans - 2175 m - Grande piste - Corde à gauche</p>
+								</div>
+										<table class="tableau engages">
+							<thead class="hidden-smallDevice">
+								<tr><th>Rg</th><th class="tc">N°</th><th>Cheval</th><th></th><th>S/A</th><th>Dist.</th><th>Red.km</th><th>Driver</th><th>Entraineur</th><th>Propriétaire</th><th></th></tr>
+							</thead>
+							<tbody>
+							<tr>
+										<td><strong class="finish">1</strong></td>
+										<td class="tc">5</td>
+										<td class="infosGen">
+											<a href="/cheval/excelsior-584192/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-d-em-87201.gif" alt="Ec.  d'Em"></span>
+												<span class="desc">
+													<strong>Excelsior</strong><img src="https://www.zone-turf.fr/media/images/blank.gif" class="ferAP" alt="D&eacute;ferr&eacute; des 4 fers" />  <span class="visible-smallDevice">H3</span>
+													<br />
+													<span class="visible-smallDevice">Yoann Lebourgeois</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-d-em-87201.gif" alt="Ec.  d'Em"></td>
+										<td class="tc hidden-smallDevice">H3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc">1'13"6</td>
+										<td class="hidden-smallDevice"><a href="/jockey/yoann-lebourgeois-221/" class="link">Yoann Lebourgeois</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/jean-pierre-allix-16093/" class="link">Jean Pierre Allix</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/ec-d-em-87201/" class="link">Ec.  d'Em</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="584192"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr class="alt">
+										<td><strong class="finish">2</strong></td>
+										<td class="tc">4</td>
+										<td class="infosGen">
+											<a href="/cheval/elino-bilou-568206/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-thierry-duvaldestin-8393.gif" alt="Ecurie Thierry Duvaldestin"></span>
+												<span class="desc">
+													<strong>Elino Bilou</strong>  <span class="visible-smallDevice">H3</span>
+													<br />
+													<span class="visible-smallDevice">Matthieu Abrivard</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-thierry-duvaldestin-8393.gif" alt="Ecurie Thierry Duvaldestin"></td>
+										<td class="tc hidden-smallDevice">H3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc">1'14"0</td>
+										<td class="hidden-smallDevice"><a href="/jockey/matthieu-abrivard-145/" class="link">Matthieu Abrivard</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/thierry-duvaldestin-120/" class="link">Thierry Duvaldestin</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/ecurie-thierry-duvaldestin-8393/" class="link">Ecurie Thierry Duvaldestin</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="568206"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr>
+										<td><strong class="finish">3</strong></td>
+										<td class="tc">6</td>
+										<td class="infosGen">
+											<a href="/cheval/el-diablo-d-aut-543452/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/cyprien-mercier-84222.gif" alt="Cyprien Mercier"></span>
+												<span class="desc">
+													<strong>El Diablo d'Aut</strong><img alt="Déferré des postérieurs" class="ferP" src="https://www.zone-turf.fr/media/images/blank.gif">  <span class="visible-smallDevice">M3</span>
+													<br />
+													<span class="visible-smallDevice">Eric Raffin</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/cyprien-mercier-84222.gif" alt="Cyprien Mercier"></td>
+										<td class="tc hidden-smallDevice">M3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc">1'14"1</td>
+										<td class="hidden-smallDevice"><a href="/jockey/eric-raffin-2957/" class="link">Eric Raffin</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/vincent-raimbault-3811/" class="link">Vincent Raimbault</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/cyprien-mercier-84222/" class="link">Cyprien Mercier</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="543452"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr class="alt">
+										<td><strong class="finish">4</strong></td>
+										<td class="tc">3</td>
+										<td class="infosGen">
+											<a href="/cheval/easy-turgot-534686/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/mme-t-hoste-35608.gif" alt="Mme Thérèse Hoste"></span>
+												<span class="desc">
+													<strong>Easy Turgot</strong><img alt="Déferré des postérieurs" class="ferP" src="https://www.zone-turf.fr/media/images/blank.gif">  <span class="visible-smallDevice">H3</span>
+													<br />
+													<span class="visible-smallDevice">Victor Saussaye</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/mme-t-hoste-35608.gif" alt="Mme Thérèse Hoste"></td>
+										<td class="tc hidden-smallDevice">H3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc">1'16"3</td>
+										<td class="hidden-smallDevice"><a href="/jockey/victor-saussaye-153850/" class="link">Victor Saussaye</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/sylvain-roger-2286/" class="link">Sylvain Roger</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/mme-therese-hoste-35608/" class="link">Mme Thérèse Hoste</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="534686"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr>
+										<td><strong class="finish">5</strong></td>
+										<td class="tc">1</td>
+										<td class="infosGen">
+											<a href="/cheval/eclair-mace-563648/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/a-taieb-6135.gif" alt="Avner Taieb"></span>
+												<span class="desc">
+													<strong>Eclair Mace</strong>  <span class="visible-smallDevice">H3</span>
+													<br />
+													<span class="visible-smallDevice">Thibaut Dromigny</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/a-taieb-6135.gif" alt="Avner Taieb"></td>
+										<td class="tc hidden-smallDevice">H3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc">1'24"1</td>
+										<td class="hidden-smallDevice"><a href="/jockey/thibaut-dromigny-142028/" class="link">Thibaut Dromigny</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/giacomo-contri-93452/" class="link">Giacomo Contri</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/avner-taieb-6135/" class="link">Avner Taieb</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="563648"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr>
+										<td><strong class="finish">D</strong></td>
+										<td class="tc">2</td>
+										<td class="infosGen">
+											<a href="/cheval/espion-jaune-621740/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/m-hulmel-84023.gif" alt="Martial Hulmel"></span>
+												<span class="desc">
+													<strong>Espion Jaune</strong>  <span class="visible-smallDevice">H3</span>
+													<br />
+													<span class="visible-smallDevice">Alexandre Abrivard</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/m-hulmel-84023.gif" alt="Martial Hulmel"></td>
+										<td class="tc hidden-smallDevice">H3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc"></td>
+										<td class="hidden-smallDevice"><a href="/jockey/alexandre-abrivard-22533/" class="link">Alexandre Abrivard</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/christophe-clin-35393/" class="link">Christophe Clin</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/martial-hulmel-84023/" class="link">Martial Hulmel</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="621740"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr><tr class="alt">
+										<td><strong class="finish">D</strong></td>
+										<td class="tc">7</td>
+										<td class="infosGen">
+											<a href="/cheval/espoir-anvalou-554550/" class="link">
+												<span class="visible-smallDevice casaque"><img src="https://www.zone-turf.fr/media/picture/casaque/a-dubois-35282.gif" alt="André Dubois"></span>
+												<span class="desc">
+													<strong>Espoir Anvalou</strong>  <span class="visible-smallDevice">M3</span>
+													<br />
+													<span class="visible-smallDevice">Adrien Lamy</span>
+												</span>
+											</a>
+										</td>
+										<td class="casaque tc hidden-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/a-dubois-35282.gif" alt="André Dubois"></td>
+										<td class="tc hidden-smallDevice">M3</td>
+										<td class="hidden-smallDevice">2&nbsp;175m</td>
+										<td class="tc"></td>
+										<td class="hidden-smallDevice"><a href="/jockey/adrien-lamy-22066/" class="link">Adrien Lamy</a></td>
+										<td class="hidden-smallDevice"><a href="/entraineur/andre-dubois-5478/" class="link">André Dubois</a></td>
+										<td class="hidden-smallDevice"><a href="/proprietaire/andre-dubois-35282/" class="link">André Dubois</a></td>
+										<td class="hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="554550"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+									</tr>
+							</tbody>
+						</table>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--a class="more fr link clearfix inner-bloc" href="#partants">Liste des partants de la course</a-->
+					</div><div class="bloc-fr visible-smallDevice">
+    </div>
+<div id="programmes" class="hidden-smallDevice">
+    <a name="partants"></a>
+    <div class="bloc data  course">
+							<a name="partants"></a><div class="title title-border"><h2>Les partants de la course</h2></div>
+							<div class="inner">
+								<p class="presentation visible-smallDevice">R1  - Vincennes - 13h05</p>
+								<div class="inner-bloc presentation">
+									<div class="combinaison fr"><img alt="Simple placé" src="https://www.zone-turf.fr/media/images/small-simple-place.svg"><img alt="Couplé placé" src="https://www.zone-turf.fr/media/images/small-couple-place.svg"><img alt="Couplé ordre" src="https://www.zone-turf.fr/media/images/small-couple-ordre.svg"><img alt="Trio" src="https://www.zone-turf.fr/media/images/small-trio.svg"><img alt="Trio Ordre" src="https://www.zone-turf.fr/media/images/small-trio-ordre.svg"></div>
+									<h3 class="nomCourse"><span class="hidden-smallDevice">R1 Course N°1 :</span><span class="visible-smallDevice">C1 - </span>  Prix de Pavilly</h3>
+									<p class="descCourse">60&nbsp;000&euro; - Monté - Mâles et hongres - 4  ans - 2175 mètres - Grande piste - Corde à gauche - Départ vers 13h05</p>
+									<p class="hidden-smallDevice">Pour poulains entiers et hongres de 4 ans (E), n'ayant pas gagné 80.000.</p>
+									<p class="hidden-smallDevice"><strong>Allocation totale : 60&nbsp;000&euro;</strong> (27&nbsp;000&euro; - 15&nbsp;000&euro; - 8&nbsp;400&euro; - 4&nbsp;800&euro; - 3&nbsp;000&euro; - 1&nbsp;200&euro; - 600&euro;)</p>
+									<p id="legend_modified" class="legend hidden-smallDevice"><img alt="Déferré des antérieurs" class="ferA" src="https://www.zone-turf.fr/media/images/blank.gif">Déferré des antérieurs, <img alt="Déferré des postérieurs" class="ferP" src="https://www.zone-turf.fr/media/images/blank.gif">Déferré des postérieurs, <img src="https://www.zone-turf.fr/media/images/blank.gif" class="ferAP" alt="D&eacute;ferr&eacute; des 4 fers" />Déferré des 4 pieds</p>
+									
+								</div>
+								
+								<table id="engages" class="inner-bloc sorting engages">
+									<thead class="hidden-smallDevice"><tr>
+								<th width="30" style="background-position: 21px 4px;">N&deg;</th>
+								<th width="120" style="background-position: 48px 4px;">Cheval</th>
+								<th width="25"></th>
+								<th width="30" style="background-position: 24px 4px;">SA</th><th width="35" style="background-position: 34px 4px;">Dist.</th>
+								<!--th width="33" style="background-position: 40px 4px;">Poids</th-->
+								<th width="80">Jockey</th>
+								<th width="80">Entraîneur</th>
+								<th width="60" style="background-position: 40px 4px;">Gains</th>
+								<th width="40" style="background-position: 34px 4px;">Rec.</th>
+								<th width="150">Dernières perf.</th><th width="80">Avis</th>
+								<th width="30" style="background-position: 34px 4px;"><img src="https://www.zone-turf.fr/media/images/cote-pmu-logo.png" /></th>
+                <th width="30" style="background-position: 34px 4px;"><img src="https://www.zone-turf.fr/media/images/cote-pmufr-logo.png" /></th>
+                <!--th width="30" style="background-position: 34px 4px;"><img src="https://www.zone-turf.fr/media/images/cote-zeturf-logo.png" /></th-->
+								<th width="10"></th>
+							</tr></thead><tr>
+											<td class=""><span>1</span></td>
+											<td class="infosGen">
+												<a href="/cheval/eclair-mace-563648/" class="link" title="Eclair Mace" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/a-taieb-6135.gif" alt="Avner Taieb"></span>
+													<span class="desc">
+														<b>Eclair Mace</b> 
+														<span class="visible-smallDevice">H3</span>
+														<br />
+														<span class="visible-smallDevice">Thibaut Dromign. [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) 8m 6m 5m 7m 0a Dm 6a</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/avner-taieb-6135/" class="link" title="Avner Taieb"><img src="https://www.zone-turf.fr/media/picture/casaque/a-taieb-6135.gif" alt="Avner Taieb"></a></td>
+											<td class="hidden-smallDevice">H3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/thibaut-dromigny-142028/" class="link" title="Thibaut Dromigny">Thibaut Dromign.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/giacomo-contri-93452/" class="link" title="Giacomo Contri">Giacomo Cont.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/avner-taieb-6135/" class="link" title="Avner Taieb">Avner Taieb</a></td>
+											<td class="hidden-smallDevice">18&nbsp;070&euro;</td>
+											<td class="hidden-smallDevice">1'17"8</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/eclair-mace-563648/#478144' class='link' target="_blank">8m</a> <a href='/cheval/eclair-mace-563648/#475772' class='link' target="_blank">6m</a> <a href='/cheval/eclair-mace-563648/#473994' class='link' target="_blank">5m</a> <a href='/cheval/eclair-mace-563648/#471178' class='link' target="_blank">7m</a> <a href='/cheval/eclair-mace-563648/#468120' class='link' target="_blank">0a</a> <a href='/cheval/eclair-mace-563648/#465298' class='link' target="_blank">Dm</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">57.7</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>57.7</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>81.4</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>81.4</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="563648"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr class="alt">
+											<td class=""><span>2</span></td>
+											<td class="infosGen">
+												<a href="/cheval/espion-jaune-621740/" class="link" title="Espion Jaune" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/m-hulmel-84023.gif" alt="Martial Hulmel"></span>
+													<span class="desc">
+														<b>Espion Jaune</b> 
+														<span class="visible-smallDevice">H3</span>
+														<br />
+														<span class="visible-smallDevice">Alexandre Abriv. [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) 2m 7a 4m 1m 2m Da 3m</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/martial-hulmel-84023/" class="link" title="Martial Hulmel"><img src="https://www.zone-turf.fr/media/picture/casaque/m-hulmel-84023.gif" alt="Martial Hulmel"></a></td>
+											<td class="hidden-smallDevice">H3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/alexandre-abrivard-22533/" class="link" title="Alexandre Abrivard">Alexandre Abriv.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/christophe-clin-35393/" class="link" title="Christophe Clin">Christophe C.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/martial-hulmel-84023/" class="link" title="Martial Hulmel">Martial Hulm.</a></td>
+											<td class="hidden-smallDevice">43&nbsp;790&euro;</td>
+											<td class="hidden-smallDevice">1'16"7</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/espion-jaune-621740/#487664' class='link' target="_blank">2m</a> <a href='/cheval/espion-jaune-621740/#486458' class='link' target="_blank">7a</a> <a href='/cheval/espion-jaune-621740/#482338' class='link' target="_blank">4m</a> <a href='/cheval/espion-jaune-621740/#479408' class='link' target="_blank">1m</a> <a href='/cheval/espion-jaune-621740/#476908' class='link' target="_blank">2m</a> <a href='/cheval/espion-jaune-621740/#474908' class='link' target="_blank">Da</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">11</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>11</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>8.7</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>8.7</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="621740"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr>
+											<td class=""><span>3</span></td>
+											<td class="infosGen">
+												<a href="/cheval/easy-turgot-534686/" class="link" title="Easy Turgot" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/mme-t-hoste-35608.gif" alt="Mme Thérèse Hoste"></span>
+													<span class="desc">
+														<b>Easy Turgot</b><img alt="Déferré des postérieurs" class="ferP" src="https://www.zone-turf.fr/media/images/blank.gif"> 
+														<span class="visible-smallDevice">H3</span>
+														<br />
+														<span class="visible-smallDevice">Victor Saussaye [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) 4a 7m Da 8m 9a 8a Dm</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/mme-therese-hoste-35608/" class="link" title="Mme Thérèse Hoste"><img src="https://www.zone-turf.fr/media/picture/casaque/mme-t-hoste-35608.gif" alt="Mme Thérèse Hoste"></a></td>
+											<td class="hidden-smallDevice">H3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/victor-saussaye-153850/" class="link" title="Victor Saussaye">Victor Saussaye</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/sylvain-roger-2286/" class="link" title="Sylvain Roger">Sylvain Roge.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/mme-therese-hoste-35608/" class="link" title="Mme Thérèse Hoste">Mme Thérès.</a></td>
+											<td class="hidden-smallDevice">46&nbsp;200&euro;</td>
+											<td class="hidden-smallDevice">1'16"3</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/easy-turgot-534686/#486586' class='link' target="_blank">4a</a> <a href='/cheval/easy-turgot-534686/#482338' class='link' target="_blank">7m</a> <a href='/cheval/easy-turgot-534686/#480568' class='link' target="_blank">Da</a> <a href='/cheval/easy-turgot-534686/#445106' class='link' target="_blank">8m</a> <a href='/cheval/easy-turgot-534686/#442332' class='link' target="_blank">9a</a> <a href='/cheval/easy-turgot-534686/#435836' class='link' target="_blank">8a</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">38.6</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>38.6</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>26.7</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>26.7</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="534686"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr class="alt">
+											<td class="favori"><span>4</span></td>
+											<td class="infosGen">
+												<a href="/cheval/elino-bilou-568206/" class="link" title="Elino Bilou" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-thierry-duvaldestin-8393.gif" alt="Ecurie Thierry Duvaldestin"></span>
+													<span class="desc">
+														<b>Elino Bilou</b> 
+														<span class="visible-smallDevice">H3</span>
+														<br />
+														<span class="visible-smallDevice">Matthieu Abriva. [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) 1m 2m 1m Dm 1m 1a Da</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/ecurie-thierry-duvaldestin-8393/" class="link" title="Ecurie Thierry Duvaldestin"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-thierry-duvaldestin-8393.gif" alt="Ecurie Thierry Duvaldestin"></a></td>
+											<td class="hidden-smallDevice">H3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/matthieu-abrivard-145/" class="link" title="Matthieu Abrivard">Matthieu Abriva.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/thierry-duvaldestin-120/" class="link" title="Thierry Duvaldestin">Thierry Duva.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/ecurie-thierry-duvaldestin-8393/" class="link" title="Ecurie Thierry Duvaldestin">Ecurie Thier.</a></td>
+											<td class="hidden-smallDevice">57&nbsp;610&euro;</td>
+											<td class="hidden-smallDevice">1'22"9</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/elino-bilou-568206/#484284' class='link' target="_blank">1m</a> <a href='/cheval/elino-bilou-568206/#479754' class='link' target="_blank">2m</a> <a href='/cheval/elino-bilou-568206/#476908' class='link' target="_blank">1m</a> <a href='/cheval/elino-bilou-568206/#466918' class='link' target="_blank">Dm</a> <a href='/cheval/elino-bilou-568206/#460976' class='link' target="_blank">1m</a> <a href='/cheval/elino-bilou-568206/#457700' class='link' target="_blank">1a</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class="favori hidden-smallDevice">1.6</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class="favori"><strong>1.6</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>2</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>2</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="568206"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr>
+											<td class=""><span>5</span></td>
+											<td class="infosGen">
+												<a href="/cheval/excelsior-584192/" class="link" title="Excelsior" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-d-em-87201.gif" alt="Ec.  d'Em"></span>
+													<span class="desc">
+														<b>Excelsior</b><img src="https://www.zone-turf.fr/media/images/blank.gif" class="ferAP" alt="D&eacute;ferr&eacute; des 4 fers" /> 
+														<span class="visible-smallDevice">H3</span>
+														<br />
+														<span class="visible-smallDevice">Yoann Lebourgeo. [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) 5m 3m 2m 2m 3m 1m 1m</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/ec-d-em-87201/" class="link" title="Ec.  d'Em"><img src="https://www.zone-turf.fr/media/picture/casaque/ec-d-em-87201.gif" alt="Ec.  d'Em"></a></td>
+											<td class="hidden-smallDevice">H3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/yoann-lebourgeois-221/" class="link" title="Yoann Lebourgeois">Yoann Lebourgeo.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/jean-pierre-allix-16093/" class="link" title="Jean Pierre Allix">Jean Pierre .</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/ec-d-em-87201/" class="link" title="Ec.  d'Em">Ec.  d'Em</a></td>
+											<td class="hidden-smallDevice">66&nbsp;090&euro;</td>
+											<td class="hidden-smallDevice"></td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/excelsior-584192/#483736' class='link' target="_blank">5m</a> <a href='/cheval/excelsior-584192/#482338' class='link' target="_blank">3m</a> <a href='/cheval/excelsior-584192/#477086' class='link' target="_blank">2m</a> <a href='/cheval/excelsior-584192/#475772' class='link' target="_blank">2m</a> <a href='/cheval/excelsior-584192/#456362' class='link' target="_blank">3m</a> <a href='/cheval/excelsior-584192/#451556' class='link' target="_blank">1m</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">3.6</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>3.6</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>3.3</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>3.3</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="584192"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr class="alt">
+											<td class=""><span>6</span></td>
+											<td class="infosGen">
+												<a href="/cheval/el-diablo-d-aut-543452/" class="link" title="El Diablo d'Aut" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/cyprien-mercier-84222.gif" alt="Cyprien Mercier"></span>
+													<span class="desc">
+														<b>El Diablo d'Aut</b><img alt="Déferré des postérieurs" class="ferP" src="https://www.zone-turf.fr/media/images/blank.gif"> 
+														<span class="visible-smallDevice">M3</span>
+														<br />
+														<span class="visible-smallDevice">Eric Raffin [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) Da 1a 6a 4a 3a 4a 5a</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/cyprien-mercier-84222/" class="link" title="Cyprien Mercier"><img src="https://www.zone-turf.fr/media/picture/casaque/cyprien-mercier-84222.gif" alt="Cyprien Mercier"></a></td>
+											<td class="hidden-smallDevice">M3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/eric-raffin-2957/" class="link" title="Eric Raffin">Eric Raffin</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/vincent-raimbault-3811/" class="link" title="Vincent Raimbault">Vincent Raim.</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/cyprien-mercier-84222/" class="link" title="Cyprien Mercier">Cyprien Merc.</a></td>
+											<td class="hidden-smallDevice">67&nbsp;610&euro;</td>
+											<td class="hidden-smallDevice">1'14"8</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/el-diablo-d-aut-543452/#486682' class='link' target="_blank">Da</a> <a href='/cheval/el-diablo-d-aut-543452/#481618' class='link' target="_blank">1a</a> <a href='/cheval/el-diablo-d-aut-543452/#477088' class='link' target="_blank">6a</a> <a href='/cheval/el-diablo-d-aut-543452/#475846' class='link' target="_blank">4a</a> <a href='/cheval/el-diablo-d-aut-543452/#470500' class='link' target="_blank">3a</a> <a href='/cheval/el-diablo-d-aut-543452/#464648' class='link' target="_blank">4a</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">8.6</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>8.6</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>6.9</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>6.9</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="543452"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr><tr>
+											<td class=""><span>7</span></td>
+											<td class="infosGen">
+												<a href="/cheval/espoir-anvalou-554550/" class="link" title="Espoir Anvalou" target="_blank">
+													<span class="casaque visible-smallDevice"><img src="https://www.zone-turf.fr/media/picture/casaque/a-dubois-35282.gif" alt="André Dubois"></span>
+													<span class="desc">
+														<b>Espoir Anvalou</b> 
+														<span class="visible-smallDevice">M3</span>
+														<br />
+														<span class="visible-smallDevice">Adrien Lamy [2&nbsp;175m]</span>
+														<br />
+														<span class="visible-smallDevice">(17) Da Dm Da 6a Dm Dm Dm</span>
+													</span>
+												</a>
+											</td><td class="casaque hidden-smallDevice"><a href="/proprietaire/andre-dubois-35282/" class="link" title="André Dubois"><img src="https://www.zone-turf.fr/media/picture/casaque/a-dubois-35282.gif" alt="André Dubois"></a></td>
+											<td class="hidden-smallDevice">M3</td>
+											<td class="hidden-smallDevice">2&nbsp;175m</td>
+											<!--td>-</td-->
+											<td class="intervenant hidden-smallDevice"><a href="/jockey/adrien-lamy-22066/" class="link" title="Adrien Lamy">Adrien Lamy</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/entraineur/andre-dubois-5478/" class="link" title="André Dubois">André Dubois</a></td>
+											<td class="intervenant hidden-smallDevice"><a href="/proprietaire/andre-dubois-35282/" class="link" title="André Dubois">André Dubois</a></td>
+											<td class="hidden-smallDevice">68&nbsp;670&euro;</td>
+											<td class="hidden-smallDevice">1'14"3</td>
+											<td class="hidden-smallDevice">(17) <a href='/cheval/espoir-anvalou-554550/#486682' class='link' target="_blank">Da</a> <a href='/cheval/espoir-anvalou-554550/#485480' class='link' target="_blank">Dm</a> <a href='/cheval/espoir-anvalou-554550/#481836' class='link' target="_blank">Da</a> <a href='/cheval/espoir-anvalou-554550/#479122' class='link' target="_blank">6a</a> <a href='/cheval/espoir-anvalou-554550/#470508' class='link' target="_blank">Dm</a> <a href='/cheval/espoir-anvalou-554550/#467374' class='link' target="_blank">Dm</a></td><td class="hidden-smallDevice"></td>
+											<td>
+		                        <span class=" hidden-smallDevice">17.5</span>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmu-logo.png" /><span class=""><strong>17.5</strong></span></div>
+		                        <div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-pmufr-logo.png" /><span>18.7</span></div>
+		                        <!--div class="visible-smallDevice odd-responsive"><img src="/media/images/cote-zeturf-logo.png" /><span >-</span></div-->
+		                  </td>
+		                  <td class="hidden-smallDevice"><span>18.7</span></td>
+		                  <!--td class="hidden-smallDevice"><span>-</span></td-->
+											<td class="tc hidden-smallDevice"><div class="fr btn-service"><div class="btn-service-tools" data-horse="554550"><img src="/media/images/btn-tools-icon.png" /></div></div></td>
+										</tr>			</table>
+								<a class="more fr link" href="/rapports/r1-c1-prix-de-pavilly-488534.html">Arrivée et rapports de la course</a>
+								
+								<div id="avis-forum" class="pronos-avis-forum"><a href="javascript:void(0);" href2="/membres/connexion-popin-488534.html?a=488534&KeepThis=true&TB_iframe=true&height=330&width=640" title="" class="thickbox link popin_draggable" id="link_popin488534"><span><img src="https://www.zone-turf.fr/design/img/puce-bulle.jpg"/>Donnez votre avis sur cette course</span></a></div><div class="bloc_pronostics">
+										<table class="other_page_bloc_prono hidden-smallDevice">
+										<tr>
+												<td colspan="16" class="tc prono-green-odd"><div class="diplomate clearfix">
+							<strong >Retrouvez les chevaux du jour du Diplomate au </strong>
+							<strong class="audiotel-20"><a href="tel:0899103103">08 99 103 103</a>* <a href="http://mise-en-relation.svaplus.fr/" target="_blank" class="external-link">Pourquoi ce numéro ?</a></strong>
+
+						</div></td>
+												<td colspan="8" class="tc prono-green alerte"><div class="clear_left alerte_pronos_div">
+						<form onsubmit="return $(this).check_alert_ajax_email();" id="alert_pronos_form" method="POST" action="/membres/inscription/etape1.html?Source=BLOCPRONOS_CHAMPMAIL_PAGERAPPORTS" class="clearfix">
+							<p>Recevez les pronostics :</p>
+							<input title="Votre email" type="text" value="Votre email" name="Email" class="textbox fl inactive "/>
+							<input type="hidden" name="AcceptNewsletter" value="1"/>
+							<input type="hidden" name="alerte_referer" value="/rapports/r1-c1-prix-de-pavilly-488534.html"/>
+							<input type="submit" name="valider_newsletter" class="button fr" value=" OK "/>
+							<input type="hidden" name="alerte_m_in_popin" value=" OK "/>
+						</form></div></td>
+											</tr><tr><td class="forecaster-name prono-green">Zone-Turf.fr</td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong>2</strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong></strong></div></td><td class="forecaster-name prono-grey">Bilto</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>2</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td><td class="forecaster-name prono-grey">Geny Courses</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td></tr><tr><td class="forecaster-name prono-grey">Week-End</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td><td colspan="8" class="empty">&nbsp;</td><td colspan="8" class="empty">&nbsp;</td></tr>
+										</table>
+										<table class="visible-smallDevice">
+										<tr><td class="tc prono-green-odd" colspan="8"><div class="diplomate clearfix">
+							<strong >Retrouvez les chevaux du jour du Diplomate au </strong>
+							<strong class="audiotel-20"><a href="tel:0899103103">08 99 103 103</a>* <a href="http://mise-en-relation.svaplus.fr/" target="_blank" class="external-link">Pourquoi ce numéro ?</a></strong>
+
+						</div></td></tr><tr><td class="forecaster-name prono-green">Zone-Turf.fr</td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong>2</strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-green number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-green-odd number"><div class="dt"><strong></strong></div></td></tr><tr><td class="forecaster-name prono-grey">Bilto</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>2</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td></tr><tr><td class="forecaster-name prono-grey">Geny Courses</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>6</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td></tr><tr><td class="forecaster-name prono-grey">Week-End</td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong>4</strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong>5</strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey number"><div class="dt"><strong></strong></div></td>
+						<td class="tc prono-grey-odd number"><div class="dt"><strong></strong></div></td></tr>
+										</table>
+								   </div>
+								<span class="hidden-smallDevice"></span>
+							</div>
+						</div></div>
+            </div>
+        </div>
+    </div>
+<div class="megabookmaker under"><div class="inner"><table width="100%"><tr><td class="picture"><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_BANDEAUBOOKMARKER&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-pmu.png?4"/></a></td>
+									<td><a href="https://eule1.pmu.fr/dynclick/pmu/?ead-publisher=ZONETURF_ZONETURF&ead-name=ZONETURF_ZONETURF-2010_WEB_DIR_FILROUGE&ead-location=H_RG_CC_ACQ_TEXTE_DESKTOP_BANDEAUBOOKMARKER&ead-creative=ACQ_H_WEB_PLANREPRISEHIPPIQUE_TEXTE&ead-creativetype=2x2&ead-mediaplan=2010_WEB_DIR_FILROUGE&eurl=https%3A%2F%2Fwww.pmu.fr%2Fturf%2Fstatic%2Frestez-chez-vous-pariez%2Fparieur-sc.html%3F%26utm_source%3DZONETURF_ZONETURF%26utm_medium%3DDIR%26utm_campaign%3D2010_WEB_DIR_FILROUGE" target="_blank"><span>Pariez sur PMU.fr : <strong>100€</strong> de bonus offerts</span></a></td><td class="picture"><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-zeturf.svg?4"/></a></td>
+									<td><a href="https://www.zeturf.fr/fr/inscription?pid=94&aff=70818003&utm_source=Affiliation&utm_medium=zone-turf&utm_campaign=ZT_FR_Zoneturf_bonus_2018" target="_blank"><span>Bonus 100% Turf : 250€ de paris offerts</span></a></td><td class="picture"><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><img class="fl" src="https://www.zone-turf.fr/media/images/bookmaker-genybet.jpg?4"/></a></td>
+									<td><a href="https://action.metaffiliation.com/trk.php?mclic=P4C55F5407F7111" target="_blank"><span>Pariez sur Genybet.fr : <strong>250€</strong> de bonus offerts</span></a></td></tr></table></div></div><div id="footer" class="hidden-smallDevice">
+    <div class="content">
+        <ul class="navigation clearfix">
+            <li>
+                <a href="/programmes/"><strong>Programmes</strong></a>
+                <ul>
+                    <li><a href="/programmes/hier/">Hier</a></li>
+                    <li><a href="/programmes/">Aujourd'hui</a></li>
+                    <li><a href="/programmes/demain/">Demain</a></li>
+                    <li><a href="/calendrier-courses-hippiques/">Autres dates</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="/pronostics/"><strong>Pronostics</strong></a>
+                <ul>
+                    <li><a href="/pronostics/">Aujourd'hui</a></li>
+                    <li><a href="/pronostics/demain/">Demain</a></li>
+                    <li><a href="/pronostics/top-chances/">Top Chances</a></li>
+                    <li><a href="/pronostics/quinte/">Quinté +</a></li>
+                    <li><a href="/pronostics/pick5/">Pick 5</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/performances/"><strong>Performances</strong></a>
+                <ul>
+                    <li><a href="/performances/cheval/">Cheval</a></li>
+                    <li><a href="/performances/jockey/">Jockey</a></li>
+                    <li><a href="/performances/entraineur/">Entraineur</a></li>
+                    <li><a href="/performances/proprietaire/">Propriétaire</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/rapports/"><strong>Arrivées-Rapports</strong></a>
+                <ul>
+                    <li><a href="/rapports/hier/">Hier</a></li>
+                    <li><a href="/rapports/">Aujourd'hui</a></li>
+                    <li><a href="/rapports/quinte/">Quinté +</a></li>
+                    <li><a href="/rapports/pick5/">Pick 5</a></li>
+                    <li><a href="/calendrier-courses-hippiques/">Autres dates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/quinte/"><strong>Quinté</strong></a>
+                <ul>
+                    <li><a href="/pronostics/quinte/">Pronostics</a></li>
+                    <li><a href="/quinte/partants/">Partants</a></li>
+                    <li><a href="/quinte/rapport/">Arrivées et rapports</a></li>
+                    <li><a href="/quinte/numero-plus/">Numéro Plus</a></li>
+                    <!--li><a href="/jeux/quinte/">Jeux</a></li-->
+                </ul>
+            </li>
+            <li>
+                <a href="/actualite/"><strong>Actu</strong></a>
+                <ul>
+                    <li><a href="/actualite/plat/">Plat</a></li>
+                    <li><a href="/actualite/obstacle/">Obstacle</a></li>
+                    <li><a href="/actualite/trot/">Trot</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/forum/"><strong>Forum</strong></a>
+                <ul>
+                    <li><a href="/forum/plat/">Plat</a></li>
+                    <li><a href="/forum/obstacle/">Obstacle</a></li>
+                    <li><a href="/forum/trot/">Trot</a></li>
+                    <li><a href="/forum/quinte/">Quinté +</a></li>
+                    <li><a href="/forum/pronostics/">Pronostics</a></li>
+                    <li><a href="/forum/cafe/">Café</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/a-propos-des-courses/"><strong>À propos des courses</strong></a>
+                <ul>
+                    <li><a href="/parier-courses-hippiques/">Parier sur les courses</a></li>
+                    <li><a href="/comparateur-bookmakers/">Comparateur Bookmakers</a></li>
+                    <li><a href="/pick5/">Pick 5</a></li>
+                    <li><a href="/definition/">Lexique</a></li>
+                    <li><a href="/guide-turf/">Guide</a></li>
+                    <li><a href="/prix-d-amerique/">Prix d'Amerique</a></li>
+                    <li><a href="/prix-de-diane/">Prix de Diane</a></li>
+                    <li><a href="/prix-de-l-arc-de-triomphe/">Prix de l'Arc de Triomphe</a>
+                    </li>
+                    <li><a href="/prix-du-jockey-club/">Prix du Jockey Club</a></li>
+                    <li><a href="/calendrier-courses-hippiques/">Calendrier</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navigation clearfix">
+            <!--
+            <li class="first"><a target="_blank" title="Pronostic-Turfiste" href="http://www.pronostic-turfiste.com/index.php">Pronostic-Turfiste</a></li>
+            <li class="first"><a target="_blank" title="Nouveau Quinté" href="http://www.nouveauquinte.com/quintejeuxgagnants.php">Nouveau Quinté</a></li>
+            -->
+            <!--            <li class="first"><a target="_blank" title="Immobilier" href="http://www.lavieimmo.com/">Immobilier</a></li>-->
+        </ul>
+<!--        <ul class="navigation clearfix">-->
+<!--            <li>-->
+<!--                <a href="http://www.bfmtv.com/politique/election/legislative/" target="_blank"><strong>Élections législatives 2017</strong></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="http://www.bfmtv.com/politique/election-en-direct/" target="_blank"><strong>Les législatives en direct</strong></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="http://www.bfmtv.com/politique/sondage/" target="_blank"><strong>Sondages</strong></a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="http://www.bfmtv.com/politique/election/resultats/" target="_blank"><strong>Résultats</strong></a>-->
+<!--            </li>-->
+<!--        </ul>-->
+        <span>
+							<a href="/webmaster.html">Webmaster</a> | <a
+                    href="/contact.html">Contactez-nous</a> | <a
+                    href="https://nextradiotv-recrute.talent-soft.com/">Recrutement</a> | <a
+                    href="/application-mobile-turf/">Application Turf</a> |
+            <a href="/divers/responsive.php" class="mnw-responsive-link swicthVersion" style="text-align: right;"><span
+                        class="icon"></span>Version mobile</a>&nbsp;&nbsp;&nbsp;
+
+							<strong> Suivez-nous : </strong>
+							<a class="social" href="//www.zone-turf.fr/rss/" target="_blank"
+                               title="Flux RSS Zone-Turf.fr"><img height="20" width="20" class="social-img"
+                                                                  src="https://www.zone-turf.fr/media/images/icon-rss1.png"
+                                                                  alt="Flux RSS Zone-Turf.fr"/></a>
+							<a class="social" href="https://www.facebook.com/pages/Zone-Turf/127546487272698"
+                               target="_blank" title="Suivez Zone-Turf.fr sur Facebook"><img height="20" width="20"
+                                                                                             class="social-img"
+                                                                                             src="https://www.zone-turf.fr/media/images/icon-fb1.png"
+                                                                                             alt="Suivez Zone-Turf.fr sur Facebook"/></a>
+							<a class="social" href="https://twitter.com/Zone_Turf" target="_blank"
+                               title="Suivez Zone-Turf.fr sur Twitter"><img height="20" width="20" class="social-img"
+                                                                            src="https://www.zone-turf.fr/media/images/icon-twitter1.png"
+                                                                            alt="Suivez Zone-Turf.fr sur Twitter"/></a>
+            <a class="social" href="https://itunes.apple.com/fr/app/zone-turf-pronos-et-rapports/id863906994?mt=8"
+                                                  target="_blank"
+                                                  title="Téléchargez gratuitement l’application Zone Turf sur votre iPhone, iPad, iPod Touch !">
+                <img height="20" width="20" class="social-img"
+                     src="https://www.zone-turf.fr/media/images/icon-appstore1.png?3"
+                     alt="Téléchargez gratuitement l’application Zone Turf sur votre iPhone, iPad, iPod Touch !"/>
+                </a>            <a class="social" href="https://play.google.com/store/apps/details?id=fr.zoneturf.mobility&hl=fr"
+                                                   target="_blank"
+                                                   title="Téléchargez gratuitement l’application Zone Turf sur votre mobile android !">
+                <img height="20" width="20" class="social-img"
+                     src="https://www.zone-turf.fr/media/images/icon-googlePlay.png?3"
+                     alt="Téléchargez gratuitement l’application Zone Turf sur votre mobile android !"/></a>&nbsp;&nbsp;&nbsp;
+            &copy;Copyright 2020 Zone-turf.fr. Tous droits réservés.
+
+						</span>
+        <span style="padding: 10px 0 0 0;">
+            <a href="/mentions-legales.html"
+               target="_blank"
+               title="Avertissement légal"><u>Mentions légales</u></a> |
+            <a href="//www.bfmtv.com/info/cgu/"><u>CGU</u></a> |
+            <a href="/conditions-generales-de-vente.html?528"><u>CGV</u></a> |
+            <a href="/infos-cookies.html"><u>Cookies</u></a> |
+
+        </span>
+    </div>
+</div>
+<div id="footer-mob" class="visible-smallDevice swicthVersion">
+
+    <div class="appli">
+        <p class="tc">
+            Téléchargez l’application Zone Turf :
+        </p>
+        <p class="tc">
+            <a href="https://itunes.apple.com/fr/app/zone-turf-pronos-et-rapports/id863906994?mt=8" class="linkImg">
+                <img src="https://www.zone-turf.fr/media/images/download-on-appstore-badge135x40.png" alt=""
+                     width="100"/>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=fr.zoneturf.mobility&amp;hl=fr" class="linkImg">
+                <img src="https://www.zone-turf.fr/media/images/googleplay.png" alt="" width="88"/>
+            </a>
+        </p>
+        <p class="tc">
+            <a href="/divers/responsive.php" class="mnw-responsive-link link">Version
+                classique</a>
+        </p>
+    </div>
+</div>
+
+<!-- Xiti Tag -->
+<script type="text/javascript">
+    <!--
+    var site = '.bfmtv.com';
+    xtnv = document;
+        xtsd = "https://logs1202";
+        if (navigator.userAgent.match(/android|avantgo|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i)) {
+        xtsite = "552328";
+    } else {
+        xtsite = "548539";
+    }
+    xtn2 = "25";        // level 2 site ID
+    xtpage = "zoneturf::rapports::reunion";        //page name (with the use of :: to create chapters)
+    xtdi = "";        //implication degree
+    xt_multc = "";        //all the xi indicators (like "&x1=...&x2=....&x3=...")
+    xt_an = "";        //user ID
+    xt_ac = "";        //category ID
+    //do not modify below
+    if (window.xtparam != null) {
+        window.xtparam += "&ac=" + xt_ac + "&an=" + xt_an + xt_multc;
+    }
+    else {
+        window.xtparam = "&ac=" + xt_ac + "&an=" + xt_an + xt_multc;
+    }
+    ;
+    //-->
+</script>
+<script type="text/javascript" src="https://www.zone-turf.fr/media/images/externe/static.bfmtv.com/ressources/js/external/xtcore.js"></script>
+<noscript>
+            <img width="1" height="1" alt=""
+             src="https://logs1202.xiti.com/hit.xiti?s=&s2=25&p=zoneturf::rapports::reunion&di=&an=&ac=">
+    </noscript>
+<!-- Fin Xiti Tag -->
+
+<!-- eStat -->
+<script language="javascript">
+    var _eStat_Whap_loaded = 0;
+    function eStat_Whap(s, b, c) {
+        var _EW_DOM = "w.estat.com";
+        var _EW_VER = "0.20";
+        var _EW_ADR = _EW_DOM + "/m/web/";
+        var _EW = "ESTAT WHAP";
+        var _dbg = 0;
+        var _s = "";
+        var _b = "";
+        var _c = "";
+        var _TYP = "whap";
+        var _flag = 0;
+
+        function iFrameProcess() {
+            try {
+                if (location.href != top.location.href) {
+                    _flag |= 0x01;
+                    if (window.top.location.host == undefined) {
+                        _flag |= 0x02;
+                    }
+                }
+            } catch (err) {
+                console.log(err.message);
+            }
+        };
+        iFrameProcess();
+        function detectString() {
+            try {
+                var u = location.href;
+                var lSusp = ["advalidation", "ad-validation", "adsite-under", "site-under", "site under", "adsite-unders", "site-unders", "siteunders", "advalidations", "ad-validations"];
+                for (var i = 0; i < lSusp.length; i++) {
+                    if (u.indexOf(lSusp[i]) != -1) {
+                        _flag |= 0x04;
+                        break;
+                    }
+                }
+            } catch (err) {
+                console.log(err.message);
+            }
+        };
+        detectString();
+        function uE(s) {
+            return encodeURIComponent(s);
+        };
+        function strK(s) {
+            if (typeof(s) != 'string')return (0);
+            if (s == '')return (0);
+            if (s == 'null')return (0);
+            if (s == 'undefined')return (0);
+            return (1);
+        };
+        function gR() {
+            var r = "";
+            try {
+                r = (top != null && top.location != null && typeof(top.location.href) == "string") ? top.document.referrer : document.referrer;
+                if (!r || r == "") {
+                    if (window.opener && window.opener.location) r = window.opener.location.toString();
+                }
+            } catch (e) {
+            }
+            ;
+            return uE(r);
+        };
+        function gP() {
+            if (document.location.protocol.substring(0, 5) == 'https')return "https://";
+            return "http://";
+        };
+        function iLChk(i, tries) {
+            if (i.complete == true)return;
+            if (tries <= 0) {
+                return;
+            }
+            window.setTimeout(function () {
+                iLChk(i, tries - 1);
+            }, 500);
+        };
+        function snd(h) {
+            var i = new Image(1, 1);
+            i.name = "0";
+            i.src = h;
+            iLChk(i, 10);
+        };
+        function debug(l, s) {
+            if (!_dbg)return;
+            switch (l) {
+                case 0:
+                    try {
+                        console.log(_EW + " " + s);
+                    } catch (e) {
+                    }
+                    ;
+                    break;
+                case 1:
+                    try {
+                        console.warn(_EW + " " + s);
+                    } catch (e) {
+                    }
+                    ;
+                    break;
+                case 2:
+                    try {
+                        console.error(_EW + " " + s);
+                    } catch (e) {
+                    }
+                    ;
+                    break;
+                default:
+                    break;
+            }
+        };
+        this.serial = function (s) {
+            if (strK(s)) _s = s; else debug(2, "Bad serial:" + s);
+        };
+        this.brand = function (s) {
+            if (strK(s)) _b = s; else debug(2, "Bad brand:" + s);
+        };
+        this.channel = function (s) {
+            if (strK(s)) _c = s; else debug(2, "Bad channel:" + s);
+        };
+        this.send = function () {
+            if (strK(_s)) {
+                var h = gP() + _EW_ADR + _s + "?" + "n=" + Math.round(Math.random() * 1000000000) + "&type=" + _TYP + (strK(_b) ? ("&brd=" + uE(_b)) : "") + (strK(_c) ? ("&chn=" + uE(_c)) : "") + "&r=" + gR() + "&v=" + _EW_VER;
+                if (_flag != 0) {
+                    h = h + "&fl=" + _flag;
+                }
+                snd(h);
+                debug(0, "hit=" + h);
+            } else debug(2, "Bad serial:" + _s);
+        };
+    };var eStatWhap = new eStat_Whap();
+    if (typeof(_eStat_Whap_loaded) != "undefined") _eStat_Whap_loaded = 1;
+    if (typeof(_eStat_Whap_loaded_func) == "function") _eStat_Whap_loaded_func();
+    <!--
+                    if(_eStat_Whap_loaded){
+                                   eStatWhap.serial("800000206991");
+                                   eStatWhap.send();
+                    }
+    -->
+</script>
+<!-- /eStat --></div>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-4658313-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+    //]]>
+</script>
+<div id='interstitial'><script type="text/javascript" async>sas.render('379');</script></div>
+
+
+
+
+
+
+    <script type="text/javascript"
+            src="https://www.zone-turf.fr/app/jquery/jquery.smartbanner.js?528"></script>
+    <script type="text/javascript">
+        $.smartbanner({
+            title: 'Zone-Turf : pronos et rapports', // What the title of the app should be in the banner (defaults to <title>)
+            author: 'Moneyweb', // What the author of the app should be in the banner (defaults to <meta name="author"> or hostname)
+            price: 'GRATUIT', // Price of the app
+            appStoreLanguage: 'fr', // Language code for App Store
+            inAppStore: 'Dans l\'App Store', // Text of price for iOS
+            inGooglePlay: 'Dans Google Play', // Text of price for Android
+            inAmazonAppStore: 'dans Amazon Appstore',
+            inWindowsStore: 'dans Windows Store', //Text of price for Windows
+            GooglePlayParams: null, // Aditional parameters for the market
+            icon: null, // The URL of the icon (defaults to <meta name="apple-touch-icon">)
+            iconGloss: null, // Force gloss effect for iOS even for precomposed
+            button: 'VOIR', // Text for the install button
+            url: null, // The URL for the button. Keep null if you want the button to link to the app store.
+            scale: 'auto', // Scale based on viewport size (set to 1 to disable)
+            speedIn: 300, // Show animation speed of the banner
+            speedOut: 400, // Close animation speed of the banner
+            daysHidden: 0, // Duration to hide the banner after being closed (0 = always show banner)
+            daysReminder: 0, // Duration to hide the banner after "VIEW" is clicked *separate from when the close button is clicked* (0 = always show banner)
+            force: null, // Choose 'ios', 'android' or 'windows'. Don't do a browser check, just always show this banner
+            hideOnInstall: true, // Hide the banner after "VIEW" is clicked.
+            layer: false, // Display as overlay layer or slide down the page
+            iOSUniversalApp: true, // If the iOS App is a universal app for both iPad and iPhone, display Smart Banner to iPad users, too.
+            appendToSelector: 'html' //Append the banner to a specific selector
+        })
+
+    </script>
+    
+
+<script type="text/javascript"
+        src="https://www.zone-turf.fr/app/jquery/jquery.pageslide.min.js?528"></script>
+<script>
+    $(".open-navbar").pageslide();
+</script>
+
+<!-- DMP Eulerian  -->
+<script> var xtpage_var = "zoneturf::rapports::reunion"</script>
+<script> var hash_var = ""</script>
+<script type='text/javascript' src="//www.zone-turf.fr/app/eulerian.js?528"></script>
+<!-- End DMP Eulerian  -->
+
+<!-- Gravity script-->
+<script> var xitiWebsiteCiblageVar = "zoneturf::rapports::reunion" </script>
+<script type="text/javascript" src="https://www.zone-turf.fr/app/gravity_zoneturf_tag.js?528"></script>
+<!--  End Gravity script -->
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"de331bc4d6","applicationID":"23024354","transactionName":"YFUENkFRV0RUAkUNXVkfMxBaH0tWRRFeFkZEHxQDQ0BWRUFPQQxC","queueTime":0,"applicationTime":79,"atts":"TBIHQAlLREo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
