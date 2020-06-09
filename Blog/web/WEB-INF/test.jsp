@@ -14,6 +14,12 @@
     <body>
         <p> Ceci est une page générée depuis une servlet</p>
         <p>Hello World!</p>
+        <p>
+            <%
+                String monAttr = (String) request.getAttribute("cle");
+                out.println(monAttr);
+            %>
+        </p>
         
     </body>
 </html>

@@ -23,6 +23,8 @@ public class TestServlet extends HttpServlet {
     public void doGet (HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         
+        String attributMsg = "Transmission attribut OK";
+        request.setAttribute("cle", attributMsg);
         this.getServletContext()
                 .getRequestDispatcher("/WEB-INF/test.jsp")
                 .forward(request, response);

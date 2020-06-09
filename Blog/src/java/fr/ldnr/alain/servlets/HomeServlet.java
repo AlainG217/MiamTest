@@ -5,6 +5,7 @@
  */
 package fr.ldnr.alain.servlets;
 
+import fr.ldnr.alain.beans.Article;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -59,7 +60,15 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//        processRequest(request, response);
+
+        
+        Article unArticle = new Article(
+                "Mon premier article",
+                "Ceci est mon 1er article.",
+                "09/06/2020",
+                "AGY");
+        request.setAttribute("unArticle", unArticle);
+
         this.getServletContext()
                 .getRequestDispatcher("/WEB-INF/home.jsp")
                 .forward(request, response);
