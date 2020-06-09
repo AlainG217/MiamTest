@@ -6,11 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Football App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./js/script.js" defer></script>
     </head>
     <body>
-        <div>TODO write content</div>
+        <div>
+                <h1>Menu principal</h1>
+            <form method="GET" action="./menu">
+                <fieldset>
+                    <input type="submit"  id="fed" value="Fédération" formaction="./menu">
+                    <input type="submit"  id= "comp" value="Compétition" formaction="./menu">
+                    <input type="text" id="opt" name="opt"> 
+                </fieldset>
+            </form>
+        </div>
     </body>
 </html>

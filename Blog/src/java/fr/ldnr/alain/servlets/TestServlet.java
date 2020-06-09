@@ -5,6 +5,7 @@
  */
 package fr.ldnr.alain.servlets;
 
+import fr.ldnr.alain.beans.Personne;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -25,6 +26,13 @@ public class TestServlet extends HttpServlet {
         
         String attributMsg = "Transmission attribut OK";
         request.setAttribute("cle", attributMsg);
+
+        String auteur = "Al God";
+        request.setAttribute("auteur", auteur);
+        
+        Personne alphonse = new Personne("Snow", "Jon", 27);
+        request.setAttribute("alphonse", alphonse);
+
         this.getServletContext()
                 .getRequestDispatcher("/WEB-INF/test.jsp")
                 .forward(request, response);

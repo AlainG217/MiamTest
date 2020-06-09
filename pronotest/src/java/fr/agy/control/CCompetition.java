@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author stagjava
  */
-@WebServlet(name = "Cfederation", urlPatterns = {"/federation"})
-public class Cfederation extends HttpServlet {
+@WebServlet(name = "CCompetition", urlPatterns = {"/competition"})
+public class CCompetition extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,10 +37,10 @@ public class Cfederation extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Cfederation</title>");            
+            out.println("<title>Servlet CCompetition</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Cfederation at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet CCompetition at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -58,12 +58,7 @@ public class Cfederation extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String federation = "France";
-        request.setAttribute("federation", federation);
-        this.getServletContext()
-                .getRequestDispatcher("/WEB-INF/federation.jsp")
-                .forward(request, response);
-
+        processRequest(request, response);
     }
 
     /**
