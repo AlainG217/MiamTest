@@ -4,5 +4,5 @@
     Author     : stagjava
 --%>
 
-            <h1>Voci mon blog</h1>
+            <h1>Voici mon blog</h1>
 
