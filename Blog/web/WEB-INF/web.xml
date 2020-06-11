@@ -9,6 +9,12 @@
             30
         </session-timeout>
     </session-config>
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
     <servlet>
         <servlet-name>TestServlet</servlet-name>
         <servlet-class>fr.ldnr.alain.servlets.TestServlet</servlet-class>
