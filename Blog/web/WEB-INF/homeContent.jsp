@@ -6,9 +6,9 @@
 
         <div id="cadre">
             <h2>Voici mes premiers articles</h2>
-            <h3>${unArticle.getTitre()}</h3>
-            <p> Article créée le ${unArticle.getDateArt()} par ${unArticle.getAuteur()}
+            <h3>${requestScope.unArticle.getTitre()}</h3>
+            <p> Article créée le ${requestScope.unArticle.getDateArt()} par ${requestScope.unArticle.getAuteur()}
             </p>
-            <p>${unArticle.getContenu()} </p>
+            <p>${requestScope.unArticle.getContenu()} </p>
         </div>             
 
