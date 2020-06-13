@@ -6,21 +6,17 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Football App</title>
+        <title>Pronostics Football</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./js/script.js" defer></script>
+        <link rel="stylesheet" href="./inc/football.css">             
     </head>
     <body>
-        <div>
-                <h1>Menu principal</h1>
-            <form method="GET" action="./menu">
-                <fieldset>
-                    <input type="submit"  id="fed" value="Fédération" formaction="./menu">
-                    <input type="submit"  id= "comp" value="Compétition" formaction="./menu">
-                    <input type="text" id="opt" name="opt"> 
-                </fieldset>
-            </form>
+        <div class="menu">
+            <h1>Pronostics football</h1>
+            <a class="optmenu" href="./donnees">Données</a>
+            <a class="optmenu" href="./resultats">Résultats</a>
+            <a class="optmenu" href="./pronostics">Pronostics</a>
         </div>
     </body>
 </html>

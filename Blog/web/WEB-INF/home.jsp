@@ -6,4 +6,6 @@
 <jsp:include page="/WEB-INF/template.jsp">
     <jsp:param name="title" value="Mon blog"/>
     <jsp:param name="content" value="homeContent"/>
+    <jsp:param name="cssFiles" value="style|global" />
+            
 </jsp:include>

@@ -8,6 +8,7 @@ package fr.ldnr.alain.servlets;
 import fr.ldnr.alain.beans.Article;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -61,13 +62,28 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+        ArrayList<Article> articles = new ArrayList<>();
         
-        Article unArticle = new Article(
+        articles.add(
+            new Article(
                 "Mon premier article",
                 "Ceci est mon 1er article.",
                 "09/06/2020",
-                "AGY");
-        request.setAttribute("unArticle", unArticle);
+                "AGY"));
+        articles.add(
+            new Article(
+                "Mon second article",
+                "Ceci est mon 2ème article.",
+                "10/06/2020",
+                "AGY"));
+        articles.add(
+            new Article(
+                "Mon troisième article",
+                "Ceci est mon 3ème article.",
+                "11/06/2020",
+                "AGY"));
+        
+        request.setAttribute("articles", articles);
 
         this.getServletContext()
                 .getRequestDispatcher("/WEB-INF/home.jsp")

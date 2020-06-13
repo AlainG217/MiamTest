@@ -10,13 +10,21 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <c:forTokens items="${param.cssFiles}" delims="|" var="cssFile">
-            <link rel="stylesheet" href="./rsc/css/${cssFile}.css">             
+            <link rel="stylesheet" href="./inc/${cssFile}.css">             
         </c:forTokens>
         <title>${param.title}</title>
     </head>
     <body>
         <jsp:include page="/WEB-INF/header.jsp" />
-        <jsp:include page="/WEB-INF/${param.content}.jsp" />
+        <jsp:include page="/WEB-INF/submenu.jsp" >
+            <jsp:param name="options" value="${param.options}" />            
+        </jsp:include>
+        <c:if test="${param.liste}">
+            <jsp:include page="/WEB-INF/${param.liste}.jsp" />
+        </c:if>
+        <c:if test="${param.content}">
+            <jsp:include page="/WEB-INF/${param.content}.jsp" />
+        </c:if>
         <jsp:include page="/WEB-INF/footer.jsp" />
     </body>
 </html>
