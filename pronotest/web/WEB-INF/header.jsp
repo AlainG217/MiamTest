@@ -6,7 +6,36 @@
 
         <div class="menu">
             <h1>Pronostics football</h1>
-            <a class="optmenu" href="./donnees">Données</a>
-            <a class="optmenu" href="./resultats">Résultats</a>
-            <a class="optmenu" href="./pronostics">Pronostics</a>
+            <c:set var="optMenuSelected" value="${param.optMenuSelected}" 
+                   scope="request"/>
+            <c:choose>
+                <c:when test="${optMenuSelected == 'donnees'}">
+                    <c:set var="className" value="optMenuSelected" 
+                           scope="request"/>
+                </c:when>
+                <c:otherwise>
+                    <c:set var="className" value="optmenu" scope="request"/>
+                </c:otherwise>
+            </c:choose>
+            <a class="${className}" href="./donnees">Données</a>
+            <c:choose>
+                <c:when test="${optMenuSelected == 'resultats'}">
+                    <c:set var="className" value="optMenuSelected" 
+                           scope="request"/>
+                </c:when>
+                <c:otherwise>
+                    <c:set var="className" value="optmenu" scope="request"/>
+                </c:otherwise>
+            </c:choose>
+            <a class="${className}" href="./resultats">Résultats</a>
+            <c:choose>
+                <c:when test="${optMenuSelected == 'pronostics'}">
+                    <c:set var="className" value="optMenuSelected"
+                           scope="request"/>
+                </c:when>
+                <c:otherwise>
+                    <c:set var="className" value="optmenu" scope="request"/>
+                </c:otherwise>
+            </c:choose>
+            <a class="${className}" href="./pronostics">Pronostics</a>
         </div>

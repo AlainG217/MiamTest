@@ -15,7 +15,9 @@
         <title>${param.title}</title>
     </head>
     <body>
-        <jsp:include page="/WEB-INF/header.jsp" />
+        <jsp:include page="/WEB-INF/header.jsp" >
+            <jsp:param name="optMenuSelected" value="${param.optMenuSelected}" />            
+        </jsp:include>
         <jsp:include page="/WEB-INF/submenu.jsp" >
             <jsp:param name="options" value="${param.options}" />            
         </jsp:include>

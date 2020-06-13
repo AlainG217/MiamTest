@@ -27,3 +27,16 @@ body, p, legend, label, input {
     padding: 10px;
     margin: 10px;
 }
+
+.optMenuSelected {
+    border: 1px solid black;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
