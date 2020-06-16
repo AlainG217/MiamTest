@@ -4,11 +4,12 @@
     Author     : stagjava
 */
 
-/* Menus */
 body, p, legend, label, input {
     font: normal 10pt verdana, helvetica, sans-serif;
 }
 
+
+/* Menus */
 .menu {
     border: 1px solid black;
     padding: 20px;
@@ -39,4 +40,13 @@ body, p, legend, label, input {
     text-decoration: none;
     padding: 10px;
     margin: 10px;
+}
+/* Liste */
+.entTabNom {
+    text-align: left;
+}
+
+colgroup {
+    width: 200px;
+    
 }

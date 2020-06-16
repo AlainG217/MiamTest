@@ -19,12 +19,16 @@
             <jsp:param name="optMenuSelected" value="${param.optMenuSelected}" />            
         </jsp:include>
         <jsp:include page="/WEB-INF/submenu.jsp" >
-            <jsp:param name="options" value="${param.options}" />            
+            <jsp:param name="optSubMenuSelected" value="${param.optSubMenuSelected}" />            
         </jsp:include>
-        <c:if test="${param.liste}">
-            <jsp:include page="/WEB-INF/${param.liste}.jsp" />
+            <c:set var="liste" value="${param.liste}"/>    
+        <c:if test="${!empty liste}">
+            <jsp:include page="/WEB-INF/${param.liste}.jsp" >
+                <jsp:param name="selection" value="${param.selection}" />                            
+            </jsp:include>
         </c:if>
-        <c:if test="${param.content}">
+            <c:set var="content" value="${param.content}"/>    
+            <c:if test="${!empty content}">
             <jsp:include page="/WEB-INF/${param.content}.jsp" />
         </c:if>
         <jsp:include page="/WEB-INF/footer.jsp" />

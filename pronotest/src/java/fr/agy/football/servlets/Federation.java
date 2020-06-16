@@ -5,7 +5,9 @@
  */
 package fr.agy.football.servlets;
 
+import fr.agy.football.beans.donnees.FederationB;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,11 +19,11 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author stagjava
  */
-@WebServlet(name = "Donnees", urlPatterns = {"/donnees"})
-public class Donnees extends HttpServlet {
+@WebServlet(name = "Federation", urlPatterns = {"/Federation"})
+public class Federation extends HttpServlet {
 
     // Constantes
-    public static final String VUE = "/WEB-INF/donnees.jsp";
+    public static final String VUE = "/WEB-INF/donnees/Federation.jsp";
 
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -35,6 +37,11 @@ public class Donnees extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
+        // Initiallisation
+        ArrayList<FederationB> federations = new ArrayList<>();
+        FederationB uneFede = new FederationB();
+        
+        // URLs
         HashMap<String, String> urls = new HashMap<>();
         urls.put("Fédérations", "./Federation");
         urls.put("Compétitions", "./Competition");
@@ -42,8 +49,12 @@ public class Donnees extends HttpServlet {
         urls.put("Equipes", "./Equipe");
         urls.put("Journées", "./Journee");
         request.setAttribute("urls", urls);
-
-        // Affichage du sous-menu données
+        
+        // Liste des fédés
+        federations = uneFede.getAll();
+        request.setAttribute("federations", federations);
+        
+        // Affichage liste
         this.getServletContext().getRequestDispatcher(VUE).
                 forward(request, response);
     }
@@ -68,7 +79,8 @@ public class Donnees extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Serlet Federation";
     }
+
 
 }
