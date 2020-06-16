@@ -5,11 +5,12 @@
  */
 package fr.ldnr.alain.servlets;
 
-import fr.ldnr.alain.beans.Utilisateur;
-import fr.ldnr.alain.forms.InscriptionCheckForm;
+import fr.ldnr.alain.beans.ArticleB;
+import fr.ldnr.alain.dao.PostDAO;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,14 +21,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author stagjava
  */
-@WebServlet(name = "Inscription", urlPatterns = {"/inscription"})
-public class Inscription extends HttpServlet {
-    
-    // Constantes
-    public static final String VUE = "/WEB-INF/inscription.jsp";
-    public static final String ATT_FORM = "form";
-    public static final String ATT_USER = "utilisateur";
-    
+@WebServlet(name = "HomeServlet", urlPatterns = {"/home"})
+public class HomeServlet extends HttpServlet {
+
+
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -39,10 +36,24 @@ public class Inscription extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+
+        List<ArticleB> articles = new ArrayList<>();
+        PostDAO pdao = new PostDAO();
+        articles = pdao.list();
         
-        // Affichagz de la page d'inscription
-        this.getServletContext().getRequestDispatcher(VUE).
-                forward(request, response);
+        if (articles.size() == 0) {
+            this.getServletContext()
+                    .getRequestDispatcher("/WEB-INF/article.jsp")
+                    .forward(request, response);
+            
+        } else {
+            request.setAttribute("articles", articles);
+
+            this.getServletContext()
+                    .getRequestDispatcher("/WEB-INF/home.jsp")
+                    .forward(request, response);
+            
+        }
     }
 
     /**
@@ -56,23 +67,6 @@ public class Inscription extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-        // Initialisation
-        InscriptionCheckForm form = new InscriptionCheckForm();
-        
-        // Validation et traitement du formulaire
-        Utilisateur utilisateur = form.checkForm(request);
-        if (form.getErreurs().isEmpty() ) {
-            utilisateur.add();
-        }
-        
-        
-        request.setAttribute(ATT_FORM, form);
-        request.setAttribute(ATT_USER, utilisateur);
-
-        this.getServletContext().getRequestDispatcher(VUE).
-                forward(request, response);
-            
     }
 
     /**
@@ -82,7 +76,7 @@ public class Inscription extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Servlet inscription";
-    }
+        return "Short description";
+    }// </editor-fold>
 
 }

@@ -5,11 +5,9 @@
  */
 package fr.ldnr.alain.servlets;
 
-import fr.ldnr.alain.beans.Utilisateur;
-import fr.ldnr.alain.forms.InscriptionCheckForm;
+import fr.ldnr.alain.beans.ArticleB;
+import fr.ldnr.alain.forms.ArticleCheckForm;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,14 +18,14 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author stagjava
  */
-@WebServlet(name = "Inscription", urlPatterns = {"/inscription"})
-public class Inscription extends HttpServlet {
-    
+@WebServlet(name = "Article", urlPatterns = {"/Article"})
+public class Article extends HttpServlet {
+
     // Constantes
-    public static final String VUE = "/WEB-INF/inscription.jsp";
+    public static final String VUE = "/WEB-INF/article.jsp";
     public static final String ATT_FORM = "form";
-    public static final String ATT_USER = "utilisateur";
-    
+    public static final String ATT_POST = "article";
+
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -40,7 +38,7 @@ public class Inscription extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        // Affichagz de la page d'inscription
+        // Affichagz de la page de maintenance article
         this.getServletContext().getRequestDispatcher(VUE).
                 forward(request, response);
     }
@@ -58,17 +56,17 @@ public class Inscription extends HttpServlet {
             throws ServletException, IOException {
         
         // Initialisation
-        InscriptionCheckForm form = new InscriptionCheckForm();
+        ArticleCheckForm form = new ArticleCheckForm();
         
         // Validation et traitement du formulaire
-        Utilisateur utilisateur = form.checkForm(request);
+        ArticleB article = form.checkForm(request);
         if (form.getErreurs().isEmpty() ) {
-            utilisateur.add();
+            article.add();
         }
         
         
         request.setAttribute(ATT_FORM, form);
-        request.setAttribute(ATT_USER, utilisateur);
+        request.setAttribute(ATT_POST, article);
 
         this.getServletContext().getRequestDispatcher(VUE).
                 forward(request, response);
@@ -82,7 +80,7 @@ public class Inscription extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Servlet inscription";
-    }
+        return "Short description";
+    }// </editor-fold>
 
 }

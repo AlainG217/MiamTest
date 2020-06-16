@@ -6,25 +6,24 @@
 package fr.ldnr.alain.forms;
 
 import fr.ldnr.alain.beans.Utilisateur;
-import java.util.HashMap;
-import java.util.Map;
+import fr.ldnr.alain.dao.UtilisateurDAO;
+import static fr.ldnr.alain.forms.UtilisateurCheckForm.CHAMP_EMAIL;
+import static fr.ldnr.alain.forms.UtilisateurCheckForm.getValeurChamp;
 import javax.servlet.http.HttpServletRequest;
 
 /**
  *
  * @author stagjava
  */
-public class InscriptionCheckForm  extends UtilisateurCheckForm {
-
-
+public class ConnexionCheckForm extends UtilisateurCheckForm {
+    
     public Utilisateur checkForm( HttpServletRequest request) {
-        Utilisateur unUtilisateur = new Utilisateur();
+        Utilisateur unUtilisateur = null;
+        UtilisateurDAO udao = new UtilisateurDAO();
         
         // Recup des données reçues
         String email            = getValeurChamp(request, CHAMP_EMAIL);
         String mdp              = getValeurChamp(request, CHAMP_PASS);
-        String nom              = getValeurChamp(request, CHAMP_NOM);
-        String confirmation     = getValeurChamp(request, CHAMP_CONF);
 
         // Validation des données reçues
         try {
@@ -35,23 +34,23 @@ public class InscriptionCheckForm  extends UtilisateurCheckForm {
         }
         
         try {
-            validationMdp(mdp, confirmation);
+            validationMdp(mdp);
         } catch (Exception e) {
             /* Gérer les erreurs */
             erreurs.put( CHAMP_PASS, e.getMessage());
         }
         
-        try {
-            validationNom(nom);
-        } catch (Exception e) {
-            /* Gérer les erreurs */
-            erreurs.put( CHAMP_NOM, e.getMessage());
+        // Vérifier existence et validité mot de passe
+        unUtilisateur = udao.findByEmail(email);
+        
+        if (unUtilisateur == null) {
+            erreurs.put( CHAMP_EMAIL, "Utilisateur n'existe pas");            
+        } else {
+            // Verif mot de passe
+            if (!mdp.equals(unUtilisateur.getMdp())) {
+                erreurs.put( CHAMP_PASS, "Mot de passe invalide");                
+            }
         }
-
-        // Résultat 
-        unUtilisateur.setEmail(email);
-        unUtilisateur.setMdp(mdp);
-        unUtilisateur.setNom(nom);
         
         if (erreurs.isEmpty() ) {
             resultat = "Succès de l'inscription";
@@ -62,6 +61,4 @@ public class InscriptionCheckForm  extends UtilisateurCheckForm {
         return unUtilisateur;
     }
     
-    
-
 }
