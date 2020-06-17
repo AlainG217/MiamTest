@@ -18,6 +18,7 @@
                 <p><c:out value="Article créée le ${date} par ${user}"/> 
                 </p>
                 <p><c:out value="${contenu}" /> </p>
+                <a class="optmenu" href="./Article?id=${status.index}">Editer</a>
                 <c:if test="${status.last}">
                     <p><c:out value="C'est le dernier"/></p>
                 </c:if>

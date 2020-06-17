@@ -16,6 +16,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -36,9 +37,12 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        // Init
+        HttpSession session = request.getSession();
         List<ArticleB> articles = new ArrayList<>();
         PostDAO pdao = new PostDAO();
+        
+        // Get list of articles
         articles = pdao.list();
         
         if (articles.size() == 0) {
@@ -48,6 +52,7 @@ public class HomeServlet extends HttpServlet {
             
         } else {
             request.setAttribute("articles", articles);
+            session.setAttribute("articles", articles);
 
             this.getServletContext()
                     .getRequestDispatcher("/WEB-INF/home.jsp")

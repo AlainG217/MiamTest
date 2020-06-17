@@ -8,11 +8,14 @@ package fr.ldnr.alain.servlets;
 import fr.ldnr.alain.beans.ArticleB;
 import fr.ldnr.alain.forms.ArticleCheckForm;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -37,6 +40,30 @@ public class Article extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // Init
+        HttpSession session = request.getSession();
+        List<ArticleB> articles = new ArrayList<>();
+        ArticleB monArticle = new ArticleB();
+
+        // Trouver l'article à éditer
+        // Recup paramètre, if any
+        String ind = request.getParameter("id");
+        if (!ind.equals(null)){
+            int index = Integer.parseInt(ind);
+
+            articles = (List<ArticleB>) session.getAttribute("articles");
+            ArticleB[] artArr = new ArticleB[articles.size()];
+            articles.toArray(artArr);
+            monArticle = artArr[index];
+            request.setAttribute(ATT_POST, monArticle);
+            session.setAttribute("mode", "upd");
+        } else {
+            session.setAttribute("mode", "add");
+            
+        }
+        
+        
+        
         
         // Affichagz de la page de maintenance article
         this.getServletContext().getRequestDispatcher(VUE).
@@ -57,11 +84,20 @@ public class Article extends HttpServlet {
         
         // Initialisation
         ArticleCheckForm form = new ArticleCheckForm();
+        HttpSession session = request.getSession();
         
         // Validation et traitement du formulaire
         ArticleB article = form.checkForm(request);
+        
+        // Temporaire status sert à dire si creation ou MAJ
+        if (session.getAttribute("mode").equals("upd")){
+            article.setStatus(10);
+        } else {
+            article.setStatus(1);
+        }
+
         if (form.getErreurs().isEmpty() ) {
-            article.add();
+            article.save();
         }
         
         

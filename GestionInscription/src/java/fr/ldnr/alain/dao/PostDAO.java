@@ -99,7 +99,7 @@ public class PostDAO extends DAO<ArticleB>{
         // Accès à la base
         try {
             String req = "UPDATE " + TABLE + 
-                    " SET titre = ?, contenu = ? , idUtilisateur = ?) WHERE id = ?";
+                    " SET titre = ?, contenu = ? , idUtilisateur = ? WHERE id = ?";
             
             PreparedStatement pstmt = 
                     this.connexion.prepareStatement(req);
@@ -107,6 +107,7 @@ public class PostDAO extends DAO<ArticleB>{
             pstmt.setString(1, obj.getTitre());
             pstmt.setString(2, obj.getContenu());
             pstmt.setInt(3, obj.getIdAuteur());
+            pstmt.setInt(4, obj.getId());
 
             pstmt.executeUpdate();
             

@@ -19,8 +19,8 @@
         <span class="erreur">${form.erreurs.article}</span>
         <br>
         <label for="contenu">Contenu <span class="requis">*</span></label>
-        <textarea id="contenu" name="contenu" rows="5" cols=""100"
-                  value='<c:out value='${article.contenu}'/>'/>
+        <textarea id="contenu" name="contenu" rows="5" cols=""100" />
+            <c:out value='${article.contenu}'/>
         </textarea>                    
         <span class="erreur">${form.erreurs.contenu}</span>
        <br>

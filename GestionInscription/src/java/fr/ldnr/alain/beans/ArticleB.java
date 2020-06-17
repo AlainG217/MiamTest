@@ -20,11 +20,13 @@ public class ArticleB implements Serializable {
     private String contenu;
     private Date dateArt;
     private int idAuteur;
+    private int status;
     
     private Utilisateur auteur;
 
     public ArticleB() {
         auteur = null;
+        status = 0;
     }
 
     public ArticleB(String titre, String contenu,  int idAuteur) {
@@ -33,6 +35,7 @@ public class ArticleB implements Serializable {
         this.auteur = auteur;
         this.idAuteur = idAuteur;
         auteur = null;
+        status = 0;
     }
 
     public ArticleB(int id, String titre, String contenu, Date dateArt, 
@@ -43,12 +46,21 @@ public class ArticleB implements Serializable {
         this.dateArt = dateArt;
         this.idAuteur = idAuteur;
         auteur = null;
+        status = 0;
     }
 
-    public void add() {
+    public void save() {
         PostDAO dao = new PostDAO();
-        
-        dao.create(this);
+    
+        switch (status) {
+            case 1: 
+                dao.create(this);
+                break;
+            case 10: 
+                dao.update(this);
+                break;
+            
+        }
     }
     public int getId() {
         return id;
@@ -99,6 +111,14 @@ public class ArticleB implements Serializable {
 
     public void setAuteur(Utilisateur auteur) {
         this.auteur = auteur;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
     
     
