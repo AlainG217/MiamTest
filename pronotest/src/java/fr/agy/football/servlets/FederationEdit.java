@@ -20,11 +20,14 @@ import javax.servlet.http.HttpSession;
  *
  * @author stagjava
  */
-@WebServlet(name = "Federation", urlPatterns = {"/Federation"})
-public class Federation extends HttpServlet {
+@WebServlet(name = "FederationEdit", urlPatterns = {"/FederationEdit"})
+public class FederationEdit extends HttpServlet {
+
 
     // Constantes
-    public static final String VUE = "/WEB-INF/donnees/Federation.jsp";
+    public static final String VUE = "/WEB-INF/donnees/FederationEdit.jsp";
+    public static final String ATT_FORM = "form";
+    public static final String ATT_FEDE = "federation";
 
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -52,10 +55,39 @@ public class Federation extends HttpServlet {
         urls.put("Journées", "./Journee");
         request.setAttribute("urls", urls);
         
-        // Liste des fédés
-        federations = uneFede.getAll();
-        request.setAttribute("federations", federations);
-        session.setAttribute("federations", federations);
+        // Gérer le mode
+        String opt = request.getParameter("opt");
+        
+        if (opt.equals("A")) {
+            session.setAttribute("mode", "add");
+        } else {
+            
+            // Trouver la fede à éditer
+            // Recup paramètre, if any
+            String ind = request.getParameter("index");
+            if (!ind.equals(null)){
+                int index = Integer.parseInt(ind);
+
+                federations = (ArrayList<FederationB>) session.getAttribute("federations");
+                FederationB[] fedeArr = new FederationB[federations.size()];
+                federations.toArray(fedeArr);
+                uneFede = fedeArr[index];
+                request.setAttribute(ATT_FEDE, uneFede);
+                switch (opt) {
+                    case "V":
+                        session.setAttribute("mode", "view");
+                        break;
+                    case "E":
+                        session.setAttribute("mode", "upd");
+                        break;
+                    case "S":
+                        session.setAttribute("mode", "del");
+                        break;
+                    default:
+                        session.setAttribute("mode", "view");                        
+                }
+            }
+        }
         
         // Affichage liste
         this.getServletContext().getRequestDispatcher(VUE).
@@ -82,8 +114,7 @@ public class Federation extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Serlet Federation";
-    }
-
+        return "Federation Edit";
+    }// </editor-fold>
 
 }

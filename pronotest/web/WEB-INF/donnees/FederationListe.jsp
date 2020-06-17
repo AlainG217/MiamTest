@@ -23,7 +23,7 @@
                 <th class="entTabOpt">Edit</th>
                 <th class="entTabOpt">Suppr</th>
             </tr>
-            <c:forEach items="${requestScope.federations}" var="fede" 
+            <c:forEach items="${sessionScope.federations}" var="fede" 
                        varStatus="status">
                 <tr>
                     <td>${fede.name}</td>
