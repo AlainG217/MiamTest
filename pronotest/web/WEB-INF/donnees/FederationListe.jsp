@@ -23,17 +23,29 @@
                 <th class="entTabOpt">Edit</th>
                 <th class="entTabOpt">Suppr</th>
             </tr>
-            <c:forEach items="${requestScope.federations}" var="fede">
+            <c:forEach items="${requestScope.federations}" var="fede" 
+                       varStatus="status">
                 <tr>
                     <td>${fede.name}</td>
-                    <td><input type="button" class="btnListe" value="V"/></td>
-                    <td><input type="button" class="btnListe" value="E"/></td>
-                    <td><input type="button" class="btnListe" value="D"/></td>
+                    <td><a class="optliste" 
+                           href=<c:url value="./FederationEdit?index=${status.index}&opt=V"/>
+                           >V</a>
+                    </td>
+                    <td><a class="optliste" 
+                           href=<c:url value="./FederationEdit?index=${status.index}&opt=E"/>
+                           >E</a>
+                    </td>
+                    <td><a class="optliste" 
+                           href=<c:url value="./FederationEdit?index=${status.index}&opt=S"/>
+                           >S</a>
+                    </td>
                 </tr>
             </c:forEach>
             
         </table>
-            
+        <a  class="optliste" 
+            href=<c:url value="./FederationEdit?index=0&opt=A"/>
+                           >Ajouter</a>            
     </fields1et>
 </form>
         

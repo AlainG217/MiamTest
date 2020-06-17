@@ -11,7 +11,7 @@
             <c:set var="optSubMenuSelected" value="${param.optSubMenuSelected}" 
                    scope="request"/>
             <c:choose>
-                <c:when test="${optMenuSelected == option}">
+                <c:when test="${optSubMenuSelected == option}">
                     <c:set var="className" value="optMenuSelected" 
                            scope="request"/>
                 </c:when>
@@ -19,7 +19,7 @@
                     <c:set var="className" value="optmenu" scope="request"/>
                 </c:otherwise>
             </c:choose>
-            <a class="optmenu" href="<c:url value='${urls[key]}' />"><c:out value="${option}"/></a>
+            <a class="${className}" href="<c:url value='${urls[key]}' />"><c:out value="${option}"/></a>
         </c:forTokens>
     </div>
 
