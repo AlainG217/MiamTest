@@ -1,0 +1,65 @@
+
+/* 
+    Created on : 12 juin 2020, 10:33:32
+    Author     : stagjava
+*/
+/* Général ----------------------------*/
+body, p, legend, label, input {
+    font: normal 10pt chandas, verdana, helvetica, sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px #0568CD solid;
+}
+
+legend {
+    font-weight: bold;
+    color: #0568CD;
+}
+#cadre {
+    border: 1px solid blue ;
+    padding: 50px;
+}
+
+
+/* Forms -------------------------------*/
+form {
+    margin: 10px;    
+}
+
+form label {
+    float: left;
+    width: 200px;
+    margin: 3px 0px 0px 0px;
+}
+
+form input {
+    margin: 3px 3px 0px 0px;
+    border: 1px #999 solid;
+}
+
+form input.sansLabel {
+    margin-left: 200px;
+}
+
+form .requis {
+    color: #c00;
+}
+
+form .erreur {
+    color: #900;
+}
+.optmenu {
+    border: 1px solid black;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    background-color: lightgrey;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
